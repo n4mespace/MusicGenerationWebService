@@ -11,10 +11,10 @@ hypercorn = "*"
 tox = "*"
 python-dotenv = "*"
 flask-login = "*"
-flask-bootstrap = "*"
 pytest = "*"
 pytest-asyncio = "*"
 quart-openapi = "*"
+quart-compress2 = "*"
 
 [requires]
 python_version = "3.7"

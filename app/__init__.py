@@ -1,16 +1,16 @@
 import quart.flask_patch
 
 from quart_openapi import Pint
-from flask_bootstrap import Bootstrap
+from quart_compress import Compress
 
-bootstrap = Bootstrap()
+compress = Compress()
 
 
 def create_app(config_class):
     app = Pint(__name__, title='MusicGenerationWebService')
     app.config.from_object(config_class)
 
-    bootstrap.init_app(app)
+    compress.init_app(app)
 
     from app.errors import bp as errors_bp
     app.register_blueprint(errors_bp, url_prefix='/errors')
