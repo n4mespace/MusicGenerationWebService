@@ -130,3 +130,6 @@ dmypy.json
 
 # VSCode
 .vscode
+
+# data for training models
+data

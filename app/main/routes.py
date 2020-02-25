@@ -12,6 +12,7 @@ class HealthCheck(Resource):
     async def post(self):
         ''' Testing if app posts correctly '''
         data = await request.get_data()
+        print(data)
         return jsonify({'status': 'OK'})
 
 
