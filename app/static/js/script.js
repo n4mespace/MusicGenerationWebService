@@ -3,7 +3,7 @@ function fitElementToParent(el, padding) {
     function resize() {
         if (timeout) clearTimeout(timeout);
         anime.set(el, {scale: 1});
-        let pad = padding || 0;
+        let pad = padding || 0; 
         let parentEl = el.parentNode;
         let elOffsetWidth = el.offsetWidth - pad;
         let parentOffsetWidth = parentEl.offsetWidth;
@@ -14,7 +14,7 @@ function fitElementToParent(el, padding) {
     window.addEventListener('resize', resize);
 }
   
-let sphereAnimation = (function() {
+window.onload = (function() {
     let sphereEl = document.querySelector('.sphere-animation');
     let spherePathEls = sphereEl.querySelectorAll('.sphere path');
     let pathLength = spherePathEls.length;
@@ -28,7 +28,10 @@ let sphereAnimation = (function() {
             for (let i = 0; i < pathLength; i++) {
                 aimations.push(anime({
                     targets: spherePathEls[i],
-                    stroke: {value: ['rgba(255,75,75,1)', 'rgba(80,80,80,.35)'], duration: 500},
+                    stroke: {
+                        value: ['rgba(255,75,75,1)', 'rgba(80,80,80,.35)'], 
+                        duration: 500
+                    },
                     translateX: [2, -4],
                     translateY: [2, -4],
                     easing: 'easeOutQuad',
@@ -54,7 +57,7 @@ let sphereAnimation = (function() {
         strokeDashoffset: {
             value: [anime.setDashoffset, 0],
             duration: 3900,
-            easing: 'easeInOutCirc',
+            easing: 'easeOutQuad',
             delay: anime.stagger(190, {direction: 'reverse'})
         },
         duration: 2000,
@@ -79,5 +82,4 @@ let sphereAnimation = (function() {
         shadowAnimation.play();
     }
     init();  
-
 })();
