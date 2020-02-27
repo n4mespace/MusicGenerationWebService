@@ -20,7 +20,9 @@ window.onload = (function() {
     let pathLength = spherePathEls.length;
     let hasStarted = false;
     let aimations = [];
-  
+    let topArea = document.getElementById('top');
+    let menu = document.getElementById('menu_btn');
+
     fitElementToParent(sphereEl);
   
     let breathAnimation = anime({
@@ -76,10 +78,33 @@ window.onload = (function() {
         autoplay: false
       }, 0);
   
+    function randomValues() {
+        anime({
+            targets: sphereEl,
+            easing: 'easeInOutQuad',
+            duration: 250,
+            scale: [
+                {value: 0.9, easing: 'easeOutSine', duration: 2000},
+                {value: 1.3, easing: 'easeInOutQuad', duration: 2600}
+              ],
+            complete: randomValues
+        });
+      }
+
     function init() {
         introAnimation.play();
         breathAnimation.play();
         shadowAnimation.play();
+        randomValues();
+
+        topArea.onmouseover = () => { 
+            menu.hidden = true;    
+            menu.click(); 
+        }
+        topArea.onmouseleave = () => { 
+            menu.click();
+            menu.hidden = false;
+        }  
     }
     init();  
 })();

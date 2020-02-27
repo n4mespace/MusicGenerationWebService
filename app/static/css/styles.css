@@ -5,6 +5,10 @@ body {
   height: -webkit-fill-available;
 }
 
+#menu_btn {
+  border: 0px !important;
+}
+
 .animation-wrapper {
   width: 50%;
   padding-bottom: 50%;
