@@ -3,11 +3,11 @@ function fitElementToParent(el, padding) {
     function resize() {
         if (timeout) clearTimeout(timeout);
         anime.set(el, {scale: 1});
-        let pad = padding || 0; 
-        let parentEl = el.parentNode;
-        let elOffsetWidth = el.offsetWidth - pad;
-        let parentOffsetWidth = parentEl.offsetWidth;
-        let ratio = parentOffsetWidth / elOffsetWidth;
+        const pad = padding || 0; 
+        const parentEl = el.parentNode;
+        const elOffsetWidth = el.offsetWidth - pad;
+        const parentOffsetWidth = parentEl.offsetWidth;
+        const ratio = parentOffsetWidth / elOffsetWidth;
         timeout = setTimeout(anime.set(el, {scale: ratio}), 10);
     }
     resize();
@@ -15,13 +15,13 @@ function fitElementToParent(el, padding) {
 }
   
 window.onload = (function() {
-    let sphereEl = document.querySelector('.sphere-animation');
-    let spherePathEls = sphereEl.querySelectorAll('.sphere path');
-    let pathLength = spherePathEls.length;
+    const sphereEl = document.querySelector('.sphere-animation');
+    const spherePathEls = sphereEl.querySelectorAll('.sphere path');
+    const pathLength = spherePathEls.length;
     let hasStarted = false;
     let aimations = [];
-    let topArea = document.getElementById('top');
-    let menu = document.getElementById('menu_btn');
+    const topArea = document.getElementById('top');
+    const menu = document.getElementById('menu_btn');
 
     fitElementToParent(sphereEl);
   
@@ -43,7 +43,7 @@ window.onload = (function() {
         },
         update: function(ins) {
             aimations.forEach(function(animation, i) {
-                let percent = (1 - Math.sin((i * .35) + (.0022 * ins.currentTime))) / 2;
+                const percent = (1 - Math.sin((i * .35) + (.0022 * ins.currentTime))) / 2;
                 animation.seek(animation.duration * percent);
             });
         },
@@ -51,10 +51,9 @@ window.onload = (function() {
         autoplay: false
     });
   
-    let introAnimation = anime.timeline({
+    const introAnimation = anime.timeline({
         autoplay: false
-    })
-    .add({
+    }).add({
         targets: spherePathEls,
         strokeDashoffset: {
             value: [anime.setDashoffset, 0],
@@ -67,7 +66,7 @@ window.onload = (function() {
         easing: 'linear'
         }, 0);
 
-    let shadowAnimation = anime({
+    const shadowAnimation = anime({
         targets: '#sphereGradient',
         x1: '25%',
         x2: '25%',
@@ -97,13 +96,11 @@ window.onload = (function() {
         shadowAnimation.play();
         randomValues();
 
-        topArea.onmouseover = () => { 
-            menu.hidden = true;    
+        topArea.onmouseover = () => {  
             menu.click(); 
         }
         topArea.onmouseleave = () => { 
             menu.click();
-            menu.hidden = false;
         }  
     }
     init();  
