@@ -20,8 +20,8 @@ def bad_request(message):
 
 
 def wants_json_response():
-    return request.accept_mimetypes['application/json'] >= \
-        request.accept_mimetypes['text/html']
+    return (request.accept_mimetypes['application/json'] 
+            >= request.accept_mimetypes['text/html'])
 
 
 @bp.app_errorhandler(404)

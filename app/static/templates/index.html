@@ -15,7 +15,7 @@
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
       
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-      <link rel="stylesheet" href="static/css/styles.css?=3">
+      <link rel="stylesheet" href="static/css/styles.css?=25">
   {% endblock %}
 
 {% endblock %}
@@ -23,11 +23,27 @@
 
 {% block body %}
     {% block navbar %}
-    <div class="pos-f-t ontainer-fluid" id="top">
+    <div class="pos-f-t" id="top">
       <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-          <h5 class="text-white h2">Select Genre</h5>
-          <span class="text-muted h4">And enjoy your melody</span>            
+        <div class="container-fluid bg-dark p-4">
+          
+          <div class="row">
+        
+            <div class="col-md-4" id="top_bar_col">
+              <h5 class="text-white h2">Select Genre</h5>
+              <span class="text-muted h4">And enjoy your melody</span>          
+            </div>
+        
+            <div class="col btn-group btn-group-toggle" id="genres_btn" data-toggle="buttons">
+              {% for genre in music_genres %}
+                <label class="btn btn-secondary">
+                    <input type="radio" name="genres" autocomplete="off">
+                    <span>{{ genre|title }}</span>
+                </label>
+              {% endfor %}
+            </div>
+        
+          </div>
         </div>
       </div>
       <nav class="navbar navbar-dark bg-dark">
@@ -78,7 +94,7 @@
 
     {% block scripts %}
       <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
-      <script src="static/js/script.js?=204"></script>
+      <script src="static/js/script.js?=206"></script>
     {% endblock %}
     
 {% endblock %}

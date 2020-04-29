@@ -9,6 +9,37 @@ body {
   border: 0px !important;
 }
 
+#top_bar_col {
+  padding-right: 1%;
+  padding-left: 5%;
+}
+
+#genres_btn {
+  padding-right: 10%;
+  padding-left: 1%;
+}
+
+.btn-secondary {
+  font-size: 1.7rem !important;
+  margin: 1 auto;
+  padding: 2%;
+  display: table-cell;
+  vertical-align: middle;
+  outline: 0 !important;
+  outline-offset: 0  !important;
+  background-image: none  !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none  !important;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):hover, 
+.show > 
+.btn-secondary.dropdown-toggle + span,
+input[type="radio"]:checked + span {
+  color: #ffc107;
+  text-shadow: 7px -3px 3px black;
+}
+
 .animation-wrapper {
   width: 50%;
   padding-bottom: 50%;

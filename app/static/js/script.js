@@ -96,12 +96,12 @@ window.onload = (function() {
         shadowAnimation.play();
         randomValues();
 
-        topArea.onmouseover = () => {  
-            menu.click(); 
-        }
-        topArea.onmouseleave = () => { 
-            menu.click();
-        }  
+        topArea.addEventListener('mouseenter', (event) => {  
+            event.target.click(); 
+        })
+        topArea.addEventListener('mouseover', (event) => {
+            event.target.click();
+        })
     }
     init();  
 })();

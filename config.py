@@ -17,3 +17,7 @@ class Development(Config):
 
 class Production(Config):
     SECRET_KEY = 'an actually secret key'
+
+
+class Test(Config):
+    TESTING = True

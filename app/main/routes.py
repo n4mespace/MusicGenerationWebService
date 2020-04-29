@@ -1,6 +1,7 @@
 from quart import jsonify, request, render_template
 from app.main import bp
 from quart_openapi import Resource
+from app.algorythm import music_generation
 
 
 @bp.route('/healthcheck', methods=['GET', 'POST'])
@@ -20,4 +21,5 @@ class HealthCheck(Resource):
 class Service(Resource):
     async def get(self):
         ''' Main page '''
-        return await render_template('index.html')
+        genres = ['classical', 'jazz', 'rock']
+        return await render_template('index.html', music_genres=genres)

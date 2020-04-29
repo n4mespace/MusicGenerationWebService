@@ -1,10 +1,6 @@
 import pytest
 from app import create_app
-from config import Config
-
-
-class TestConfig(Config):
-    pass
+from config import Test as TestConfig
 
 
 @pytest.fixture(name='test_app')
