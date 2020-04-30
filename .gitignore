@@ -133,3 +133,9 @@ dmypy.json
 
 # trained model's weights
 *.h5
+
+# sublime
+*.sublime-workspace
+
+# Poetry stuff
+pyproject.toml
