@@ -1,7 +1,7 @@
 from quart import jsonify, request, render_template
-from app.main import bp
 from quart_openapi import Resource
-from app.algorythm.music_generation import generate
+from server.main import bp
+from server.algorythm.music_generation import generate
 import gpt_2_simple as gpt2
 
 
@@ -34,3 +34,10 @@ class Service(Resource):
         music_abc = generate('default', params, sess)
 
         return jsonify({'music': music_abc})
+
+
+@bp.route('/time')
+def get_current_time():
+    import time
+    
+    return {'time': time.time()}

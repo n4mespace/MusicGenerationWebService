@@ -2,7 +2,7 @@
 
 # Choosing num of workers
 if [ -z "$1" ]; then
-    echo "Running app with 1 worker and reload..."
+    echo "Running app with 1 worker with reload..."
     hypercorn mgws:app --debug --reload -w 1
 else
     num_workers=$1

@@ -1,13 +1,12 @@
 from quart import render_template, request, jsonify
-from app.errors import bp
+from server.errors import bp
 from werkzeug.http import HTTP_STATUS_CODES
 
 
 def error_response(status_code, message=None):
     payload = {
-        'error': HTTP_STATUS_CODES.get(
-            status_code, 'Unknown error')
-        }
+        'error': HTTP_STATUS_CODES.get(status_code, 'Unknown error')
+    }
     if message:
         payload['message'] = message
     response = jsonify(payload)
@@ -21,7 +20,7 @@ def bad_request(message):
 
 def wants_json_response():
     return (request.accept_mimetypes['application/json'] 
-            >= request.accept_mimetypes['text/html'])
+                >= request.accept_mimetypes['text/html'])
 
 
 @bp.app_errorhandler(404)
