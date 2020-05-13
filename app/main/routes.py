@@ -1,17 +1,22 @@
 from quart import jsonify, request, render_template
 from app.main import bp
 from quart_openapi import Resource
-from app.algorythm import music_generation
+from app.algorythm.music_generation import generate
+import gpt_2_simple as gpt2
+
+
+sess = gpt2.start_tf_sess(threads=1)
+# gpt2.load_gpt2(sess,
+#                checkpoint_dir='app/algorythm/checkpoint',
+#                run_name='nmd1')
 
 
 @bp.route('/healthcheck', methods=['GET', 'POST'])
 class HealthCheck(Resource):
     async def get(self):
-        ''' Testing if app gets correctly '''
         return jsonify({'status': 'OK'})
 
     async def post(self):
-        ''' Testing if app posts correctly '''
         data = await request.get_data()
         print(data)
         return jsonify({'status': 'OK'})
@@ -19,7 +24,13 @@ class HealthCheck(Resource):
 
 @bp.route('/service', methods=['GET'])
 class Service(Resource):
+    genres = ['classical', 'jazz', 'rock']
+
     async def get(self):
-        ''' Main page '''
-        genres = ['classical', 'jazz', 'rock']
-        return await render_template('index.html', music_genres=genres)
+        return await render_template('index.html', music_genres=self.genres)
+
+    async def post(self):
+        params = await request.json()
+        music_abc = generate('default', params, sess)
+
+        return jsonify({'music': music_abc})
