@@ -1,54 +1,41 @@
 import React, { Component } from 'react';
 import axios from "axios";
-import logo from './logo.svg';
 import './App.css';
+import GenresGrid from './Components/GenresGrid.js';
+import TopBar from './Components/TopBar.js';
+import Sky from 'react-sky';
+
+// const GenresGrid = React.lazy(() => import('./Component/GenresGrid/index.js'));
 
 
-class App extends Component {
+export default class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      currentTime: null,
-    };
+    this.noteImages = {};
+
+    this.importAllImages(
+      require.context('./MusicalNotes', false, /\.(png|svg)$/)
+    ).map((elem, i) => {
+      this.noteImages[i] = elem;
+    });
   }
 
-  componentWillMount() {
-    setInterval(async () => this.updateTime(), 1000);
-  }
-
-  async updateTime() {
-    try {
-        const promise = await axios.get("http://localhost:8000/time");  
-        const time = promise.data.time;
-
-        this.setState({ currentTime: new Date().setTime(time) / 366 / 24 / 60 / 60 });
-    } catch(err) {
-        console.log(err);
-    }
-
+  importAllImages(context) {
+    return context.keys().map(context);
   }
 
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          <p>The current time is {this.state.currentTime}.</p>
-        </header>
+        <Sky
+          images={this.noteImages}
+          how={50} 
+          time={30} 
+          size={'90px'} 
+        />
+        <TopBar />
+        <GenresGrid />
       </div>
     );
   }
 }
-
-export default App;

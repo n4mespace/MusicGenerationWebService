@@ -1,11 +1,12 @@
 from quart import jsonify, request, render_template
 from quart_openapi import Resource
 from server.main import bp
-from server.algorythm.music_generation import generate
-import gpt_2_simple as gpt2
+# from server.algorythm.music_generation import generate
+# import gpt_2_simple as gpt2
+import json
 
 
-sess = gpt2.start_tf_sess(threads=1)
+# sess = gpt2.start_tf_sess(threads=1)
 # gpt2.load_gpt2(sess,
 #                checkpoint_dir='app/algorythm/checkpoint',
 #                run_name='nmd1')
@@ -27,17 +28,11 @@ class Service(Resource):
     genres = ['classical', 'jazz', 'rock']
 
     async def get(self):
-        return await render_template('index.html', music_genres=self.genres)
+        return await render_template(
+            'index.html', music_genres=self.genres)
 
-    async def post(self):
-        params = await request.json()
-        music_abc = generate('default', params, sess)
+    # async def post(self):
+    #     params = await request.json()
+    #     music_abc = generate('default', params, sess)
 
-        return jsonify({'music': music_abc})
-
-
-@bp.route('/time')
-def get_current_time():
-    import time
-    
-    return {'time': time.time()}
+    #     return jsonify({'music': music_abc})

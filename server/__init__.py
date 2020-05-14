@@ -13,7 +13,8 @@ jwt = JWTManager()
 def create_app(config_class):
     app = Pint(__name__,
                title='MusicGenerationWebService',
-               template_folder='static/templates')
+               # template_folder='static/templates',)
+               template_folder='static/react')
 
     app.config.from_object(config_class)
     app = cors(app)
@@ -21,8 +22,8 @@ def create_app(config_class):
     compress.init_app(app)
     jwt.init_app(app)
 
-    from server.errors import bp as errors_bp
-    app.register_blueprint(errors_bp, url_prefix='/errors')
+    # from server.errors import bp as errors_bp
+    # app.register_blueprint(errors_bp, url_prefix='/errors')
 
     from server.main import bp as main_bp
     app.register_blueprint(main_bp)
