@@ -256,3 +256,6 @@ dmypy.json
 
 # Poetry stuff
 pyproject.toml
+
+# Build of client
+react/
