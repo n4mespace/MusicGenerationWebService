@@ -13,12 +13,11 @@ jwt = JWTManager()
 def create_app(config_class):
     app = Pint(__name__,
                title='MusicGenerationWebService',
-               # template_folder='static/templates',)
                template_folder='static/react')
 
     app.config.from_object(config_class)
-    app = cors(app)
 
+    app = cors(app)
     compress.init_app(app)
     jwt.init_app(app)
 

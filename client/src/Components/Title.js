@@ -3,9 +3,7 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
 
-const Title = (props) => {
-  const { classes } = props;
-  
+const Title = () => {  
   return (
     <Typography 
       component="div" 

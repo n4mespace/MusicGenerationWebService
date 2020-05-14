@@ -4,10 +4,17 @@ body {
 }
 
 #topbar {
-  margin-top: 3%;
+  margin-top: 2%;
   margin-bottom: 2%; 
 }
 
 div {
   font-size: 1.5rem;
 } 
+
+footer {
+  margin-top:calc(5% + 60px);
+  position: absolute;
+  bottom: 0;
+  width: 100% !important;
+}

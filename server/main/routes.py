@@ -3,7 +3,6 @@ from quart_openapi import Resource
 from server.main import bp
 # from server.algorythm.music_generation import generate
 # import gpt_2_simple as gpt2
-import json
 
 
 # sess = gpt2.start_tf_sess(threads=1)

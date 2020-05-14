@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import axios from "axios";
+// import axios from "axios";
 import './App.css';
 import GenresGrid from './Components/GenresGrid.js';
 import TopBar from './Components/TopBar.js';
+import ABCPlayer from './Components/ABCPlayer.js';
+import BottomBar from './Components/BottomBar.js';
 import Sky from 'react-sky';
 
 // const GenresGrid = React.lazy(() => import('./Component/GenresGrid/index.js'));
@@ -15,7 +17,7 @@ export default class App extends Component {
 
     this.importAllImages(
       require.context('./MusicalNotes', false, /\.(png|svg)$/)
-    ).map((elem, i) => {
+    ).forEach((elem, i) => {
       this.noteImages[i] = elem;
     });
   }
@@ -29,12 +31,14 @@ export default class App extends Component {
       <div className="App">
         <Sky
           images={this.noteImages}
-          how={50} 
+          how={70} 
           time={30} 
           size={'90px'} 
         />
         <TopBar />
         <GenresGrid />
+        <ABCPlayer />
+        <BottomBar />
       </div>
     );
   }
