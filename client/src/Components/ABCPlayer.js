@@ -6,18 +6,28 @@ import 'abcjs/abcjs-audio.css';
 
 
 const styles = theme => ({
-
+  main: {
+    marginTop: "3rem",
+  }
 });
 
 const ABCPlayer = (props) => {
   const { classes } = props;
+  const elemId = "genMusic";
 
   useEffect(() => {
-    abcjs.renderAbc("paper", "X: 1\nT: Cooley's\nM: 4/4\nL: 1/8\nK: Emin\n|:D2|EB{c}BA B2 EB|~B2 AB dBAG|FDAD BDAD|FDAD dAFD|");
+    abcjs.renderAbc(elemId, 
+                    "X: 1\nM: 4/4\nL: 1/8\nK: Emin\n|:D2|EB{c}BA B2 EB|~B2 AB dBAG|FDAD BDAD|FDAD dAFD|",
+                    {
+                      responsive: "resize",
+                      add_classes: true,
+                    });
   }, []);
 
   return (
-    <div id="paper"></div>
+    <div className={classes.main}>
+      <div id={elemId}></div>
+    </div>
   );
 }
 

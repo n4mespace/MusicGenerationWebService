@@ -19,7 +19,7 @@ export default function BottomBar() {
   return (
     <div>
       <footer className={classes.footer}>
-        <Typography variant="body2" color="textSecondary">
+        <Typography variant="body2" color="black">
           {'Copyright © '}
           <Link color="inherit" href="https://github.com/n4mespace">
             n4mespace
