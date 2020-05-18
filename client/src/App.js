@@ -38,6 +38,10 @@ const App = (props) => {
 
   return (
     <div id="App">
+      <TopBar />
+      <GenresGrid />
+      <BottomBar />
+     
       <div>
         <CSSTransition 
           active={!skyLoaded} 
@@ -60,9 +64,6 @@ const App = (props) => {
       </div>
 
       <div>
-        <TopBar />
-        <GenresGrid />
-        <BottomBar />
 
         { skyLoaded && (
           <div>
@@ -70,14 +71,15 @@ const App = (props) => {
               active={skyLoaded} 
               defaultStyle={{ opacity: 0 }}
               enterStyle={{ opacity: transit(1, 500, "ease-in") }}
-              activeStyle={{ opacity: 0.7 }}
-              transitionDelay={100}
+              activeStyle={{ opacity: 1 }}
+              transitionDelay={1000}
             >
               <Sky
                 images={noteImages}
                 how={50} 
                 time={40} 
-                size={'80px'} 
+                size={'80px'}
+                id="sky"
               />
             </CSSTransition>  
             <ABCPlayer musicUrl={musicUrl} />

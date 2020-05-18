@@ -17,8 +17,9 @@ const ABCPlayer = (props) => {
 
   const ELEM_ID = "genMusic";
   const MUSIC_SERVICE_URL = props.musicUrl;
+  const STARTING_STATE = "X: 1\nM: 4/4\nL: 1/8\nK: Emin\n|:D2|EB{c}BA B2 EB|~B2 AB dBAG|FDAD BDAD|FDAD dAFD|";
 
-  const [currMusic, setCurrMusic] = useState('');
+  const [currMusic, setCurrMusic] = useState(STARTING_STATE);
   const [isLoading, setIsLoading] = useState(true);     
 
   useEffect(() => {
@@ -27,7 +28,10 @@ const ABCPlayer = (props) => {
     })
       .then(response => response.json())
       .then(data => setCurrMusic(data.music))
-      .catch(e => setCurrMusic(''));
+      .catch(e => {
+        // TODO: err handl
+        setCurrMusic(STARTING_STATE)
+      });
 
     setIsLoading(false);
   }, [MUSIC_SERVICE_URL]);

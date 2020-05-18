@@ -30,17 +30,12 @@ class Service(Resource):
         return await render_template(
             'index.html', music_genres=self.genres)
 
-    # async def post(self):
-    #     params = await request.json()
-    #     music_abc = generate('default', params, sess)
-
-    #     return jsonify({'music': music_abc})
-
 
 @bp.route('/generate', methods=['GET', 'POST'])
 class MusicGeneration(Resource):
     async def get(self):
         music_abc = "X: 1\nM: 4/4\nL: 1/8\nK: Emin\n|:D2|EB{c}BA B2 EB|~B2 AB dBAG|FDAD BDAD|FDAD dAFD|"
+        # music_abc = await  bp.run_sync(generate('default', params, sess))
         return jsonify({'music': music_abc})
 
     async def post(self):
