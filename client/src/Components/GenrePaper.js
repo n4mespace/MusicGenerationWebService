@@ -11,9 +11,6 @@ const styles = theme => ({
     color: orange[500],
     backgroundColor: theme.palette.action.disabled,
     marginBottom: theme.spacing.unit,
-    "&:hover": {
-      backgroundColor: "red",
-    }
   },
   button: {
     width: "60%",
@@ -29,13 +26,20 @@ const GenrePaper = (props) => {
 
   const handleChange = event => {
     if (prevActiveButton !== genre) {
-      document.getElementById(genre).style.background = "red";
+      const newActiveBtn = document.getElementById(genre);
       
+      newActiveBtn.style.background = "white";
+      newActiveBtn.style.color = "black";      
+
       if (prevActiveButton) {
-        document.getElementById(prevActiveButton).style.background = "rgba(0, 0, 0, 0.26)";
+        const prevActiveBtn = document.getElementById(prevActiveButton);
+
+        prevActiveBtn.style.background = "rgba(0, 0, 0, 0.26)";
+        prevActiveBtn.style.color = orange[500];
       }
 
       props.onClick(genre);
+      event.preventDefault();
     }
   };
 

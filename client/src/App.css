@@ -71,3 +71,24 @@ svg .abcjs-d0-03125,
 svg .abcjs-beam-elem {
   fill: #ffffcc;
 }
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.MuiButton-label :hover, .MuiIconButton-label :hover {
+  background-color: white !important;
+  color: black !important;
+  border-radius: 10px !important;
+  
+  transition: all 2s !important;
+  -o-transition: all 2s !important;
+  -ms-transition: all 2s !important;
+  -moz-transition: all 2s !important;
+  -webkit-transition: all 2s !important;
+
+  transform: scale(1.1) !important; 
+}

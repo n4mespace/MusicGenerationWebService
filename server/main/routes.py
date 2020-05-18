@@ -35,3 +35,17 @@ class Service(Resource):
     #     music_abc = generate('default', params, sess)
 
     #     return jsonify({'music': music_abc})
+
+
+@bp.route('/generate', methods=['GET', 'POST'])
+class MusicGeneration(Resource):
+    async def get(self):
+        music_abc = "X: 1\nM: 4/4\nL: 1/8\nK: Emin\n|:D2|EB{c}BA B2 EB|~B2 AB dBAG|FDAD BDAD|FDAD dAFD|"
+        return jsonify({'music': music_abc})
+
+    async def post(self):
+        params = await request.json()
+        # music_abc = generate('default', params, sess)
+        music_abc = "X: 1\nM: 4/4\nL: 1/8\nK: Emin\n|:D2|EB{c}BA B2 EB|~B2 AB dBAG|FDAD BDAD|FDAD dAFD|"
+
+        return jsonify({'music': music_abc})

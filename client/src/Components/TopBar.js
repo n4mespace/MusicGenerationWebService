@@ -34,9 +34,13 @@ const styles = theme => ({
 const TopBar = (props) => {
   const { classes } = props;
   const externalLinks = {
-    github: 'https://www.google.com',
-    documentation: 'https://www.google.com',
+    github: 'https://github.com/n4mespace',
+    documentation: 'https://github.com/n4mespace/MusicGenerationWebService',
   };
+
+  const handleClick = (link) => () => {
+    window.open(link, "_blank");
+  }
 
   return (
     <div className={classes.root}>
@@ -57,8 +61,7 @@ const TopBar = (props) => {
             className={classes.iconButton}
             aria-label="upload picture" 
             component="span"
-            onClick={() => window.open(
-              externalLinks.documentation, "_blank")}
+            onClick={handleClick(externalLinks.documentation)}
           >
             <DescriptionOutlinedIcon />
           </IconButton>
@@ -67,8 +70,7 @@ const TopBar = (props) => {
             className={classes.iconButton}
             aria-label="upload picture" 
             component="span"
-            onClick={() => window.open(
-              externalLinks.github, "_blank")}
+            onClick={handleClick(externalLinks.github)}
           >
             <GitHubIcon />  
           </IconButton>

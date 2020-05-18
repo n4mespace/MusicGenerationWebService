@@ -12,7 +12,9 @@
     "axios": "^0.19.2",
     "bootstrap": "^4.5.0",
     "react": "^16.13.1",
+    "react-css-transition": "^0.7.4",
     "react-dom": "^16.13.1",
+    "react-loader-spinner": "^3.1.14",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-sky": "^1.1.0"
@@ -38,5 +40,6 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "/static/react"
+  "homepage": "/static/react",
+  "proxy": "http://localhost:8000"
 }

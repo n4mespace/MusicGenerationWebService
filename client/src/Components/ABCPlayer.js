@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import abcjs from "abcjs";
 import 'abcjs/abcjs-audio.css';
+import { CSSTransition, transit } from 'react-css-transition';
 
 
 const styles = theme => ({
@@ -13,20 +14,44 @@ const styles = theme => ({
 
 const ABCPlayer = (props) => {
   const { classes } = props;
-  const elemId = "genMusic";
+
+  const ELEM_ID = "genMusic";
+  const MUSIC_SERVICE_URL = props.musicUrl;
+
+  const [currMusic, setCurrMusic] = useState('');
+  const [isLoading, setIsLoading] = useState(true);     
 
   useEffect(() => {
-    abcjs.renderAbc(elemId, 
-                    "X: 1\nM: 4/4\nL: 1/8\nK: Emin\n|:D2|EB{c}BA B2 EB|~B2 AB dBAG|FDAD BDAD|FDAD dAFD|",
-                    {
-                      responsive: "resize",
-                      add_classes: true,
-                    });
-  }, []);
+    fetch(MUSIC_SERVICE_URL, {
+      method: 'GET',
+    })
+      .then(response => response.json())
+      .then(data => setCurrMusic(data.music))
+      .catch(e => setCurrMusic(''));
+
+    setIsLoading(false);
+  }, [MUSIC_SERVICE_URL]);
+
+  useEffect(() => {
+    abcjs.renderAbc(ELEM_ID, currMusic, {
+      responsive: "resize",
+      add_classes: true,
+    });
+  }, [currMusic]);
 
   return (
     <div className={classes.main}>
-      <div id={elemId}></div>
+        <CSSTransition
+          active={!isLoading} 
+          defaultStyle={{ opacity: 0 }}
+          enterStyle={{ opacity: transit(1.0, 1500, "ease-in") }}
+          activeStyle={{ opacity: 1.0 }}
+          transitionDelay={200}
+        >
+          <div id={ELEM_ID}></div>
+        </CSSTransition>
+
+        { isLoading && <p>Loading...</p> }
     </div>
   );
 }

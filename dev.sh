@@ -4,7 +4,6 @@
 cd client && npm run build && cd ../
 
 
-
 # Choosing num of workers
 if [ -z "$1" ]; then
     echo "> running app (1 worker) with reload..."
