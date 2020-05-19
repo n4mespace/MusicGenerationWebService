@@ -16,7 +16,7 @@ const App = (props) => {
   const [skyLoaded, setSkyLoaded] = useState(false);
   
   const [noteImages, setNoteImages] = useState({});
-  const musicUrl = useState('/generate')[0];
+  const musicUrl = useState('api/generate')[0];
 
   const importAllImages = context => context.keys().map(context);
 

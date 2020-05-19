@@ -1,3 +1,6 @@
+MUSIC_GENRES = ['classical', 'jazz', 'rock']
+
+
 class Config(object):
     DEBUG = False
     TESTING = False

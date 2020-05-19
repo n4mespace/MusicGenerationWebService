@@ -259,3 +259,7 @@ pyproject.toml
 
 # Build of client
 react/
+
+# Model chechpoints
+checkpoint/
+!checkpoint/*.py

@@ -24,6 +24,9 @@ def create_app(config_class):
     # from server.errors import bp as errors_bp
     # app.register_blueprint(errors_bp, url_prefix='/errors')
 
+    from server.algorythm import bp as algorythm_bp
+    app.register_blueprint(algorythm_bp, url_prefix='/api')
+
     from server.main import bp as main_bp
     app.register_blueprint(main_bp)
 
