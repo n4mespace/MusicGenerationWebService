@@ -1,6 +1,9 @@
+os: linux
+
 language: node_js
 node_js:
-- "stable"
+- 12
+dist: xenial
 
 stages:
   - Build
@@ -12,15 +15,16 @@ before_install:
   - chmod +x dev.sh
 
 install:
-  - pip install gdown
-  - pip install poetry
   - cd client
   - npm install
   - cd ../
-  - gdown [CheckpointUrl] -O checkpoint.tar.gz
+  - pip install gdown
+  - pip install poetry
+  - gdown $CheckpointUrl -O checkpoint.tar.gz
   - tar -xvf checkpoint.tar.gz
   - cd checkpoint && mv . ../server/algorythm/checkpoint && cd ../
   - rm -rf checkpoint.tar.gz checkpoint/
+  - poetry shell && cd server && poetry install && cd ../
 
 jobs:
   include:
