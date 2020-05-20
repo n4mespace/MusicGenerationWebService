@@ -4,16 +4,20 @@ python:
   - "3.7.7"
 
 stages:
-  - Tests
+  - Build
 
 before_install:
-  - pip install poetry && cd server
+  - pip install poetry
+  - cd client
+  - npm install
+  - cd ../server
+  - chmod +x dev.sh
+  - cd ../
 
 install:
   - poetry install
 
 jobs:
   include:
-    - stage: Tests
-      # script: cd ../ && poetry run pytest tests.py
-      script: echo "Done"
+    - stage: Build
+      script: poetry shell && sh dev.sh
