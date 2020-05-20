@@ -12,10 +12,7 @@ before_install:
 install:
   - poetry install
 
-after_install:
-  - cd ../
-
 jobs:
   include:
     - stage: Test
-      script: poetry run pytest tests.py
+      script: cd ../ && poetry run pytest tests.py
