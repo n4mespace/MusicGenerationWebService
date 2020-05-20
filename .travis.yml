@@ -9,7 +9,7 @@ stages:
   - Test
 
 before_install:
-  - pip install poetry
+  - pip install poetry && cd server
 
 install:
   - poetry install
