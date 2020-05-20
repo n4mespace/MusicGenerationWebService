@@ -11,7 +11,7 @@ stages:
 before_install:
   - sudo apt update
   - nvm ls-remote
-  - nvm install v12.6.2
+  - nvm install v12.6
   - pip install gdown
   - pip install poetry
   - pip install codecov
@@ -35,3 +35,5 @@ jobs:
 
 after_success:
   - codecov
+  - bash <(curl -s https://codecov.io/bash)
+
