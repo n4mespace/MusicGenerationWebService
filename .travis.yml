@@ -22,7 +22,7 @@ install:
   - pip install poetry
   - gdown $CheckpointUrl -O checkpoint.tar.gz
   - tar -xvf checkpoint.tar.gz
-  - cd checkpoint && mv . ../server/algorythm/checkpoint && cd ../
+  - mv checkpoint/* server/algorythm/checkpoint
   - rm -rf checkpoint.tar.gz checkpoint/
   - poetry shell && cd server && poetry install && cd ../
 
