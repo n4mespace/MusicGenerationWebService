@@ -1,7 +1,5 @@
 os: linux
 
-sudo: enabled
-
 language: node_js
 node_js:
 - 12
@@ -15,19 +13,21 @@ before_install:
   - sudo apt update
   - sudo apt install python3.7
   - pyenv global 3.7
+  - pip install gdown
+  - pip install poetry
+  - poetry env use python3.7
+  - poetry shell
   - chmod +x dev.sh
 
 install:
   - cd client
   - npm install
   - cd ../
-  - pip install gdown
-  - pip install poetry
   - gdown $CheckpointUrl -O checkpoint.tar.gz
   - tar -xvf checkpoint.tar.gz
   - mv checkpoint/* server/algorythm/checkpoint
   - rm -rf checkpoint.tar.gz checkpoint/
-  - poetry shell && cd server && poetry install && cd ../
+  - cd server && poetry install && cd ../
 
 jobs:
   include:
