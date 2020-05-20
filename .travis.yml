@@ -1,20 +1,19 @@
 os: linux
 
-language: node_js
-node_js:
-- 12
+language: python
+python: 
+  - "3.7.7"
 dist: xenial
 
 stages:
   - Build
 
 before_install:
-  - sudo add-apt-repository ppa:deadsnakes/ppa -y
   - sudo apt update
-  - pyenv install 3.7.7
-  - pyenv global 3.7.7
+  - nvm install v12.6.3
   - pip install gdown
   - pip install poetry
+  - pip install codecov
   - poetry shell
   - chmod +x dev.sh
 
@@ -32,3 +31,6 @@ jobs:
   include:
     - stage: Build      
     - script: pytest tests.py && echo "Build success!"
+
+after_success:
+  - codecov
