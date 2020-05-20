@@ -9,9 +9,8 @@ stages:
   - Build
 
 before_install:
-  - sudo add-apt-repository ppa:deadsnakes/ppa -y
   - sudo apt update
-  - sudo apt install python3.7
+  - pyenv install 3.7.7
   - pyenv global 3.7.7
   - pip install gdown
   - pip install poetry
