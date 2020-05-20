@@ -11,11 +11,11 @@ stages:
 before_install:
   - sudo apt update
   - nvm ls-remote
-  - nvm install v12.6
+  - nvm install v12.6.2
   - pip install gdown
   - pip install poetry
   - pip install codecov
-  - poetry shell
+  - pip install pytest-cov
   - chmod +x dev.sh
 
 install:
@@ -31,7 +31,7 @@ install:
 jobs:
   include:
     - stage: Build      
-    - script: pytest tests.py && echo "Build success!"
+    - script: pytest --cov=./
 
 after_success:
   - codecov
