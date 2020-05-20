@@ -254,9 +254,6 @@ dmypy.json
 # sublime
 *.sublime-workspace
 
-# Poetry stuff
-pyproject.toml
-
 # Build of client
 react/
 
