@@ -25,13 +25,13 @@ MGWS - веб сервіс, на якому користувач може про
 
 Для вебсервісу використовувалися такі фреймворки:
 
-#### Серверна частина (python3):
+##### Серверна частина (python3):
 * [Quart](https://pgjones.gitlab.io/quart/)
 
-#### Клієнтська частина (js):
+##### Клієнтська частина (js):
 *  [React](https://ru.reactjs.org/docs/getting-started.html)
 
-### Нейронна мережа (python3):
+##### Нейронна мережа (python3):
 * [Tensorflow](https://www.tensorflow.org/)
 
 

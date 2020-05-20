@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^7.2.1",
     "abcjs": "^5.12.0",
     "axios": "^0.19.2",
+    "better-docs": "^2.0.1",
     "bootstrap": "^4.5.0",
     "react": "^16.13.1",
     "react-css-transition": "^0.7.4",
@@ -23,7 +24,8 @@
     "start": "react-scripts start",
     "build": "rm -rf ../server/static/react && react-scripts build && mv build ../server/static/react",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "docs": "jsdoc -c jsdoc.conf.json -d"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -41,5 +43,8 @@
     ]
   },
   "homepage": "/static/react",
-  "proxy": "http://localhost:8000"
+  "proxy": "http://localhost:8000",
+  "devDependencies": {
+    "jsdoc": "^3.6.4"
+  }
 }

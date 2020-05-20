@@ -24,6 +24,7 @@ const GenrePaper = (props) => {
   const genre = props.genre;
   const prevActiveButton = props.activeButton;
 
+  // TODO: refactor with UseState
   const handleChange = event => {
     if (prevActiveButton !== genre) {
       const newActiveBtn = document.getElementById(genre);
