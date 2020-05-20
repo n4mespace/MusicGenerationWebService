@@ -3,6 +3,10 @@ dist: xenial
 python:
   - "3.7.7"
 
+language: node_js
+node_js:
+- "stable"
+
 stages:
   - Build
 
@@ -10,9 +14,8 @@ before_install:
   - pip install poetry
   - cd client
   - npm install
-  - cd ../server
-  - chmod +x dev.sh
   - cd ../
+  - chmod +x dev.sh
 
 install:
   - poetry install
