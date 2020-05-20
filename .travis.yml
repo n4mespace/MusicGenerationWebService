@@ -2,26 +2,27 @@ language: node_js
 node_js:
 - "stable"
 
-addons:
-  apt:
-    packages:
-      - python3
-
 stages:
   - Build
 
 before_install:
-  - pyenv install 3.7 -y
+  - sudo apt update
+  - sudo apt install python3
   - pyenv global 3.7
+  - chmod +x dev.sh
+
+install:
+  - pip install gdown
   - pip install poetry
   - cd client
   - npm install
   - cd ../
-  - chmod +x dev.sh
-
-install:
-  - poetry install
+  - gdown [CheckpointUrl] -O checkpoint.tar.gz
+  - tar -xvf checkpoint.tar.gz
+  - cd checkpoint && mv . ../server/algorythm/checkpoint && cd ../
+  - rm -rf checkpoint.tar.gz checkpoint/
 
 jobs:
   include:
-    - stage: Build
+    - stage: Build      
+    - script: pytest tests.py && echo "Build success!"
