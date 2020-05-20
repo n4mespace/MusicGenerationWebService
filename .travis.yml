@@ -11,8 +11,8 @@ stages:
   - Build
 
 before_install:
-  - pyenv install 3.7.7
-  - pyenv global 3.7.7
+  - pyenv install 3.7
+  - pyenv global 3.7
   - pip install poetry
   - cd client
   - npm install
