@@ -12,6 +12,9 @@ before_install:
 install:
   - poetry install
 
+after_install:
+  - cd ../
+
 jobs:
   include:
     - stage: Test

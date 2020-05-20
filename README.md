@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/n4mespace/MusicGenerationWebService.svg?token=BH7x1GyGU7Wzay5sJ8QA&branch=master)](https://travis-ci.com/n4mespace/MusicGenerationWebService)
 
 # MusicGenerationWebService
 ## Software Engineering Term Paper
