@@ -6,7 +6,7 @@ python:
 dist: xenial
 
 stages:
-  - Build
+  - Tests 
 
 before_install:
   - sudo apt update
@@ -27,6 +27,6 @@ install:
 
 jobs:
   include:
-    - stage: Build      
-    - script: pytest tests.py
+    - stage: Tests      
+      script: pytest tests.py
 
