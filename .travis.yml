@@ -10,7 +10,8 @@ stages:
 
 before_install:
   - sudo apt update
-  - nvm install v12.6.3
+  - nvm ls-remote
+  - nvm install v12.6
   - pip install gdown
   - pip install poetry
   - pip install codecov
