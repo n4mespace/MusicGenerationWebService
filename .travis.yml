@@ -11,7 +11,7 @@ stages:
   - Build
 
 before_install:
-  - pip install poetry
+  - pip3 install poetry
   - cd client
   - npm install
   - cd ../
