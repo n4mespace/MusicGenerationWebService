@@ -9,6 +9,7 @@ stages:
   - Build
 
 before_install:
+  - sudo add-apt-repository ppa:deadsnakes/ppa -y
   - sudo apt update
   - pyenv install 3.7.7
   - pyenv global 3.7.7
