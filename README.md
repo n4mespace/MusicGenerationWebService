@@ -1,3 +1,4 @@
+
 # MusicGenerationWebService
 
 [![Build Status](https://travis-ci.com/n4mespace/MusicGenerationWebService.svg?token=BH7x1GyGU7Wzay5sJ8QA&branch=master)](https://travis-ci.com/n4mespace/MusicGenerationWebService)
@@ -25,14 +26,14 @@ MGWS - веб сервіс, на якому користувач може про
 
 Для вебсервісу використовувалися такі фреймворки:
 
-##### Серверна частина (python3):
+1. Серверна частина (python3):
 * [Quart](https://pgjones.gitlab.io/quart/)
 
-##### Клієнтська частина (js):
+2. Клієнтська частина (js):
 *  [React](https://ru.reactjs.org/docs/getting-started.html)
 
-##### Нейронна мережа (python3):
-* [Tensorflow](https://www.tensorflow.org/)
+3. Нейронна мережа (python3):
+* [gpt-2-simple](https://github.com/minimaxir/gpt-2-simple)
 
 
 ## 2. Технічне завдання <a name="techtask"></a>
@@ -59,10 +60,35 @@ MGWS - веб сервіс, на якому користувач може про
  
 ## 5. Тестування  <a name="test"></a> 
 
-// опис тестування
+За допомогою бібліотеки [pytest](https://docs.pytest.org/en/latest/) та [pytest-asyncio](https://github.com/pytest-dev/pytest-asyncio) запускаємо тести командою:
+```bash
+>> pytest tests.py
+```
+Також автоматично тестування запускається після кожного коміту за допомогою інтеграції з [Travis-ci](https://docs.travis-ci.com/)
 
 ## 6. Використання  <a name="howto"></a> 
-// тут будуть вказівки щодо розгортки проекту
+
+Успішно розгорнути проект можна:
+
+1. За допомогою [poetry](https://python-poetry.org/) та [nvm](https://github.com/nvm-sh/nvm):
+```bash
+>> git clone https://github.com/n4mespace/MusicGenerationWebService
+>> pip3 install poetry
+>> cd server && poetry install && cd ../
+>> nvm install v12.6
+>> cd client && npm install && cd ../
+>> chmod +x dev.sh
+>> ./dev.sh
+```
+2. За допомогою [Docker](https://docs.docker.com/):
+```bash
+>> git clone https://github.com/n4mespace/MusicGenerationWebService
+>> DOCKER_BUILDKIT=1 docker build -t mgws:latest .
+```
+та після білда запустити командою:
+```bash
+>> docker run --name mgws -it -p 8000:8000 --rm mgws:latest -e WORKER_NUM=1
+```
 
 ## 7. Висновки  <a name="conclusion"></a> 
 

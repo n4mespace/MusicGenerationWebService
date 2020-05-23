@@ -32,6 +32,7 @@ COPY . /project
 
 # Install client's dependencies
 WORKDIR /project/client/
+RUN npm install -g npm
 RUN npm install
 
 # Give proper right to startup script
