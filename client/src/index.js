@@ -5,6 +5,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+/**
+ * Renders Main App
+ * @render
+ */
 ReactDOM.render(
   <React.StrictMode>
     <App />

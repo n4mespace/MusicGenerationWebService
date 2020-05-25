@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: Components/ABCPlayer.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: Components/ABCPlayer.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React, { useState, useEffect, useCallback } from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+import abcjs from "abcjs";
+import 'abcjs/abcjs-audio.css';
+import { CSSTransition, transit } from 'react-css-transition';
+import queue from 'async/queue';
+
+
+const styles = theme => ({
+  main: {
+    marginTop: "3rem",
+  }
+});
+
+/**
+ * Represents player of generated music
+ * Renders abc string of music and play it
+ * @component
+ * @param {object} props - props of component
+ */
+const ABCPlayer = (props) => {
+  const { classes } = props;
+
+  const ELEM_ID = props.playerID;
+  const MUSIC_SERVICE_URL = props.musicUrl;
+  const STARTING_STATE = "X: 1\nM: 4/4\nL: 1/8\nK: Emin\n|:D2|EB{c}BA B2 EB|~B2 AB dBAG|FDAD BDAD|FDAD dAFD|";
+
+  const [isLoading, setIsLoading] = useState(true);
+  const music = [STARTING_STATE];
+
+  const qMusic = queue((task, callback) => {
+    console.log('task: ' + task.data);
+    music.push(task.data);
+    console.log('music: ' + music);
+
+    callback();
+  }, 2);
+
+  const createSynth = new abcjs.synth.CreateSynth();
+  const synthControl = new abcjs.synth.SynthController();
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (music.length &lt; 5) {
+        const currMusic = music[0];
+        const prefix = currMusic.slice(-20);
+
+        fetch(MUSIC_SERVICE_URL, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ prefix }),
+        })
+          .then(response => response.json())
+          .then(data => {
+            const slicedMusic = data.music.slice(0, 80);
+            const len = slicedMusic.length;
+
+            return currMusic
+              .slice(len - 1)
+              .concat(slicedMusic);
+          }).then((music) => {
+            qMusic.push({ data: music });
+          })
+          .catch(e => {
+            // TODO: err handl
+            console.warn(e);
+          });
+      }
+    }, 3500);
+
+    setIsLoading(false);
+
+    return () => clearInterval(interval);
+  }, [qMusic, MUSIC_SERVICE_URL, music]);
+
+  const renderMusicPlayer = useCallback(() => {
+    const abc = music.length > 1 ? music.shift() : music[0];
+    const tunes = abcjs.renderAbc(ELEM_ID, abc, {
+      responsive: "resize",
+      add_classes: true,
+      inlineControls: {
+        hide: true,
+      },
+    })[0];
+
+    return tunes;
+  }, [music, ELEM_ID]);
+
+  useEffect(() => {
+    renderMusicPlayer();
+  }, [renderMusicPlayer, music]);
+
+  const handleClick = () => {
+    const tunes = renderMusicPlayer();
+    synthControl.load("#audio", {}, { displayPlay: true });
+
+    createSynth.init({ 
+        visualObj: tunes,
+    }).then(() => {
+        synthControl.setTune(tunes, true, {
+          chordsOff: true,
+          qpm: 70,
+        }).then(() => {
+          console.log("Audio successfully loaded.")
+        }).catch((error) => {
+          console.warn("Audio problem:", error);
+        });
+    }).catch((error) => {
+      console.warn("Audio problem:", error);
+    });
+  }
+  
+  return (
+    &lt;div className={classes.main}>
+        &lt;CSSTransition
+          active={!isLoading} 
+          defaultStyle={{ opacity: 0 }}
+          enterStyle={{ opacity: transit(1.0, 1500, "ease-in") }}
+          activeStyle={{ opacity: 1.0 }}
+          transitionDelay={200}
+        >
+          &lt;div id={ELEM_ID}>&lt;/div>
+          &lt;span id="audio">&lt;/span>
+        &lt;/CSSTransition>
+
+        { isLoading &amp;&amp; &lt;p>Loading...&lt;/p> }
+    &lt;/div>
+  );
+}
+
+ABCPlayer.propTypes = {
+  classes: PropTypes.object.isRequired,
+  musicUrl: PropTypes.object.isRequired,
+  playerID: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(ABCPlayer);
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="ABCPlayer.html">ABCPlayer</a></li><li><a href="App.html">App</a></li><li><a href="GenrePaper.html">GenrePaper</a></li><li><a href="GenresGrid.html">GenresGrid</a></li><li><a href="module.exports.html">exports</a></li><li><a href="Title.html">Title</a></li><li><a href="TopBar.html">TopBar</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.4</a> on Mon May 25 2020 06:45:33 GMT+0300 (Eastern European Summer Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

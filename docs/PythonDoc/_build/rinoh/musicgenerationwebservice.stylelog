@@ -1,0 +1,2647 @@
+---------------------------------- page 1 ----------------------------------
+#### DownExpandingContainer('title')
+  StaticGroupedFlowables()
+    Paragraph('MusicGenerationWebService', style='title page title')
+         > (0,0,1,0,2) title page title
+           (0,0,0,0,2) body
+      SingleStyledText('MusicGenerationWebService')
+    Paragraph('Release 0.0.1', style='title page subtitle')
+         > (0,0,1,0,2) title page subtitle
+           (0,0,0,0,2) body
+      SingleStyledText('Release 0.0.1')
+    Paragraph('n4mespace', style='title page author')
+         > (0,0,1,0,2) title page author
+           (0,0,0,0,2) body
+      SingleStyledText('n4mespace')
+    Paragraph('May 25, 2020', style='title page date')
+         > (0,0,1,0,2) title page date
+           (0,0,0,0,2) body
+      SingleStyledText('May 25, 2020')
+---------------------------------- page i ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### FlowablesContainer('chapter title')
+  Paragraph('Table of Contents', style='front matter section title')
+       > (0,0,1,0,2) front matter section title
+         (0,0,0,0,2) body
+    Field('Table of Contents')
+      SingleStyledText('Table of Contents')
+#### ChainedContainer('column1')
+  StaticGroupedFlowables()
+    TableOfContentsSection(style='table of contents')
+         > (0,0,1,0,1) table of contents section
+           (0,0,0,1,1) chapter
+      TableOfContents()   table of contents
+           > (0,0,0,0,2) table of contents
+        TableOfContentsEntry('1	Subpackages	1')
+             > (0,0,0,1,2) toc level 1
+            MixedStyledText('1	Subpackages	1')
+              ReferenceField('1')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('1')
+              Tab('	')
+              ReferenceField('Subpackages')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('Subpackages')
+              Tab('	')
+              ReferenceField('1')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('1')
+        TableOfContentsEntry('2	Module contents	3')
+             > (0,0,0,1,2) toc level 1
+            MixedStyledText('2	Module contents	3')
+              ReferenceField('2')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('2')
+              Tab('	')
+              ReferenceField('Module contents')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('Module contents')
+              Tab('	')
+              ReferenceField('3')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('3')
+        TableOfContentsEntry('3	Module contents	5')
+             > (0,0,0,1,2) toc level 1
+            MixedStyledText('3	Module contents	5')
+              ReferenceField('3')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('3')
+              Tab('	')
+              ReferenceField('Module contents')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('Module contents')
+              Tab('	')
+              ReferenceField('5')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('5')
+        TableOfContentsEntry('4	Subpackages	7')
+             > (0,0,0,1,2) toc level 1
+            MixedStyledText('4	Subpackages	7')
+              ReferenceField('4')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('4')
+              Tab('	')
+              ReferenceField('Subpackages')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('Subpackages')
+              Tab('	')
+              ReferenceField('7')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('7')
+        TableOfContentsEntry('5	Submodules	9')
+             > (0,0,0,1,2) toc level 1
+            MixedStyledText('5	Submodules	9')
+              ReferenceField('5')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('5')
+              Tab('	')
+              ReferenceField('Submodules')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('Submodules')
+              Tab('	')
+              ReferenceField('9')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('9')
+        TableOfContentsEntry('6	server.algorythm.music_generat...')
+             > (0,0,0,1,2) toc level 1
+            MixedStyledText('6	server.algorythm.music_generat...')
+              ReferenceField('6')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('6')
+              Tab('	')
+              ReferenceField('server.algorythm.music_generatio...')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('server.algorythm.music_generatio...')
+              Tab('	')
+              ReferenceField('11')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('11')
+        TableOfContentsEntry('7	server.algorythm.routes module...')
+             > (0,0,0,1,2) toc level 1
+            MixedStyledText('7	server.algorythm.routes module...')
+              ReferenceField('7')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('7')
+              Tab('	')
+              ReferenceField('server.algorythm.routes module')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('server.algorythm.routes module')
+              Tab('	')
+              ReferenceField('13')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('13')
+        TableOfContentsEntry('8	Module contents	15')
+             > (0,0,0,1,2) toc level 1
+            MixedStyledText('8	Module contents	15')
+              ReferenceField('8')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('8')
+              Tab('	')
+              ReferenceField('Module contents')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('Module contents')
+              Tab('	')
+              ReferenceField('15')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('15')
+        TableOfContentsEntry('9	Submodules	17')
+             > (0,0,0,1,2) toc level 1
+            MixedStyledText('9	Submodules	17')
+              ReferenceField('9')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('9')
+              Tab('	')
+              ReferenceField('Submodules')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('Submodules')
+              Tab('	')
+              ReferenceField('17')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('17')
+        TableOfContentsEntry('10	server.errors.handlers module...')
+             > (0,0,0,1,2) toc level 1
+            MixedStyledText('10	server.errors.handlers module...')
+              ReferenceField('10')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('10')
+              Tab('	')
+              ReferenceField('server.errors.handlers module')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('server.errors.handlers module')
+              Tab('	')
+              ReferenceField('19')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('19')
+        TableOfContentsEntry('11	Module contents	21')
+             > (0,0,0,1,2) toc level 1
+            MixedStyledText('11	Module contents	21')
+              ReferenceField('11')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('11')
+              Tab('	')
+              ReferenceField('Module contents')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('Module contents')
+              Tab('	')
+              ReferenceField('21')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('21')
+        TableOfContentsEntry('12	Submodules	23')
+             > (0,0,0,1,2) toc level 1
+            MixedStyledText('12	Submodules	23')
+              ReferenceField('12')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('12')
+              Tab('	')
+              ReferenceField('Submodules')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('Submodules')
+              Tab('	')
+              ReferenceField('23')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('23')
+        TableOfContentsEntry('13	server.main.routes module	25')
+             > (0,0,0,1,2) toc level 1
+            MixedStyledText('13	server.main.routes module	25')
+              ReferenceField('13')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('13')
+              Tab('	')
+              ReferenceField('server.main.routes module')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('server.main.routes module')
+              Tab('	')
+              ReferenceField('25')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('25')
+        TableOfContentsEntry('14	Module contents	27')
+             > (0,0,0,1,2) toc level 1
+            MixedStyledText('14	Module contents	27')
+              ReferenceField('14')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('14')
+              Tab('	')
+              ReferenceField('Module contents')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('Module contents')
+              Tab('	')
+              ReferenceField('27')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('27')
+        TableOfContentsEntry('	Python Module Index	29')
+             > (0,0,0,1,2) toc level 1
+            MixedStyledText('	Python Module Index	29')
+              ReferenceField('')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('')
+              Tab('	')
+              ReferenceField('Python Module Index')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('Python Module Index')
+              Tab('	')
+              ReferenceField('29')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('29')
+        TableOfContentsEntry('	Index	31')
+             > (0,0,0,1,2) toc level 1
+            MixedStyledText('	Index	31')
+              ReferenceField('')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('')
+              Tab('	')
+              ReferenceField('Index')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('Index')
+              Tab('	')
+              ReferenceField('31')
+                   x (0,0,0,1,3) toc linked reference
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('31')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		i')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('		i')
+        Tab('	')
+        Tab('	')
+        Field('i')
+          SingleStyledText('i')
+---------------------------------- page 1 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### FlowablesContainer('chapter title')
+  Paragraph('CHAPTER 1', style='body matter chapter label')
+       > (0,0,1,0,2) body matter chapter label
+         (0,0,0,0,2) body
+    MixedStyledText('CHAPTER 1')
+      MixedStyledText('CHAPTER ')
+        StringField('CHAPTER')
+        SingleStyledText(' ')
+      Field('1', style='number')
+           > (0,0,2,0,3) body matter chapter number
+        SingleStyledText('1')
+  Paragraph('Subpackages', style='body matter chapter title')
+       > (0,0,1,0,2) body matter chapter title
+         (0,0,0,0,2) body
+    Field('Subpackages')
+      SingleStyledText('Subpackages')
+  Paragraph('CHAPTER 1', style='body matter chapter label')
+       > (0,0,1,0,2) body matter chapter label
+         (0,0,0,0,2) body
+    MixedStyledText('CHAPTER 1')
+      MixedStyledText('CHAPTER ')
+        StringField('CHAPTER')
+        SingleStyledText(' ')
+      Field('1', style='number')
+           > (0,0,2,0,3) body matter chapter number
+        SingleStyledText('1')
+#### ChainedContainer('column1')
+  StaticGroupedFlowables()
+    DocumentTree()
+      StaticGroupedFlowables()   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/docs/PythonDoc/source/index.rst:0 <compound>
+      StaticGroupedFlowables()   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/docs/PythonDoc/source/index.rst:0 <compound>
+      Section(id='subpackages')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/docs/PythonDoc/source/index.rst:26 <section>
+           > (0,0,0,1,2) chapter
+        StaticGroupedFlowables()   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/docs/PythonDoc/source/index.rst:None <compound>
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		1')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('		1')
+        Tab('	')
+        Tab('	')
+        Field('1')
+          SingleStyledText('1')
+---------------------------------- page 2 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+#### UpExpandingContainer('header')
+  StaticGroupedFlowables()
+    Header('MusicGenerationWebService, Relea...')
+         > (0,0,0,0,2) header
+           (0,0,0,0,1) body
+      MixedStyledText('MusicGenerationWebService, Relea...')
+        Field('MusicGenerationWebService')
+          SingleStyledText('MusicGenerationWebService')
+        SingleStyledText(', ')
+        Field('Release 0.0.1')
+          SingleStyledText('Release 0.0.1')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('2		Chapter 1.  Subpackages')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('2		Chapter 1.  Subpackages')
+        Field('2')
+          SingleStyledText('2')
+        Tab('	')
+        Tab('	')
+        StringField('Chapter')
+        SingleStyledText(' ')
+        Field('1')
+          SingleStyledText('2')
+        SingleStyledText('.  ')
+        Field('Subpackages')
+          SingleStyledText('Module contents')
+---------------------------------- page 3 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### FlowablesContainer('chapter title')
+  Paragraph('CHAPTER 2', style='body matter chapter label')
+       > (0,0,1,0,2) body matter chapter label
+         (0,0,0,0,2) body
+    MixedStyledText('CHAPTER 2')
+      MixedStyledText('CHAPTER ')
+        StringField('CHAPTER')
+        SingleStyledText(' ')
+      Field('2', style='number')
+           > (0,0,2,0,3) body matter chapter number
+        SingleStyledText('2')
+  Paragraph('Module contents', style='body matter chapter title')
+       > (0,0,1,0,2) body matter chapter title
+         (0,0,0,0,2) body
+    Field('Module contents')
+      SingleStyledText('Module contents')
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+      Section(id='module-server')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/docs/PythonDoc/source/index.rst:36 <section>
+           > (0,0,0,1,2) chapter
+        LabeledFlowable(style='object description')   None:None <desc>
+             > (0,0,1,0,2) object description
+          StaticGroupedFlowables(style='signatures')
+               > (0,0,2,0,3) object signatures
+            Paragraph('server.create_app ( config_class...', id='server.create_app')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/__init__.py:docstring of server.create_app:1 <desc_signature>
+                 > (0,0,2,0,5) object signature
+                   (0,0,0,0,2) body
+              MixedStyledText('server.create_app ( config_class...')
+                MixedStyledText('server.', style='additional name part')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/__init__.py:docstring of server.create_app:None <desc_addname>
+                     > (0,0,3,0,6) additional name part
+                  SingleStyledText('server.')
+                MixedStyledText('create_app', style='main object name')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/__init__.py:docstring of server.create_app:None <desc_name>
+                     > (0,0,3,0,6) object name
+                  SingleStyledText('create_app')
+                MixedStyledText(' ( config_class: config.Config )...')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/__init__.py:docstring of server.create_app:None <desc_parameterlist>
+                  MixedStyledText(' ( config_class: config.Config')
+                    SingleStyledText(' ( ', style='parentheses')
+                         > (0,0,3,0,6) object parentheses
+                    MixedStyledText('config_class: config.Config', style='parameter list')
+                         > (0,0,3,0,6) object parameter list
+                      MixedStyledText('config_class: config.Config', style='parameter')   None:None <desc_parameter>
+                           > (0,0,3,0,6) object parameter
+                        MixedStyledText('config_class')   None:None <inline>
+                          SingleStyledText('config_class')
+                        MixedStyledText(':')   None:None <inline>
+                          SingleStyledText(':')
+                        SingleStyledText(' ')
+                        MixedStyledText('config.Config')   None:None <inline>
+                          SingleStyledText('config.Config')
+                  SingleStyledText(' ) ', style='parentheses')
+                       > (0,0,3,0,6) object parentheses
+                MixedStyledText('→ quart.app.Quart')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/__init__.py:docstring of server.create_app:None <desc_returns>
+                  MixedStyledText('→ ')
+                    SingleStyledText('→', style='returns arrow')
+                    SingleStyledText(' ')
+                  MixedStyledText('quart.app.Quart', style='returns')
+                       > (0,0,3,0,6) object returns
+                    SingleStyledText('quart.app.Quart')
+          StaticGroupedFlowables(style='content')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/__init__.py:docstring of server.create_app:None <desc_content>
+               > (0,0,2,0,3) object description content
+            Paragraph('Create Quart app given Config cl...')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/__init__.py:docstring of server.create_app:1 <paragraph>
+                 > (0,0,2,0,5) object description content paragraph
+                   (0,0,0,0,2) body
+              MixedStyledText('Create Quart app given Config cl...')
+                SingleStyledText('Create Quart app given Config cl...')
+            DefinitionList()   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/__init__.py:docstring of server.create_app:None <definition_list>
+                 > (0,0,0,0,2) definition list
+              LabeledFlowable()   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/__init__.py:docstring of server.create_app:6 <definition_list_item>
+                   > (0,0,0,0,4) definition list item
+                StaticGroupedFlowables(style='definition term')
+                     > (0,0,1,0,5) definition term
+                  Paragraph('Use:')
+                       > (0,0,1,0,7) definition term paragraph
+                         (0,0,0,0,2) body
+                    MixedStyledText('Use:')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/__init__.py:docstring of server.create_app:6 <term>
+                      SingleStyledText('Use:')
+                StaticGroupedFlowables(style='definition')   None:None <definition>
+                     > (0,0,1,0,5) definition
+                  Paragraph('Compress for files sizes reducti...')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/__init__.py:docstring of server.create_app:4 <paragraph>
+                       > (0,0,1,0,7) definition paragraph
+                         (0,0,0,0,2) body
+                    MixedStyledText('Compress for files sizes reducti...')
+                      SingleStyledText('Compress for files sizes reducti...')
+            DefinitionList(style='field list')   None:None <field_list>
+                 > (0,0,1,0,2) field list
+                   (0,0,0,0,2) definition list
+              LabeledFlowable()   None:None <field>
+                   > (0,0,1,0,4) field list item
+                     (0,0,0,0,4) definition list item
+                Paragraph('Parameters', style='field name')
+                     > (0,0,2,0,6) field name
+                       (0,0,0,0,2) body
+                  MixedStyledText('Parameters')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/__init__.py:docstring of server.create_app:0 <field_name>
+                    SingleStyledText('Parameters')
+                StaticGroupedFlowables()   None:None <field_body>
+                  Paragraph('{Config} -- class with configura...')   None:None <paragraph>
+                       > (0,0,0,0,2) body
+                    MixedStyledText('{Config} -- class with configura...')
+                      MixedStyledText('{Config} -- class with configura...', style='literal strong')   None:None <literal_strong>
+                           > (0,0,1,0,1) literal strong
+                        SingleStyledText('{Config} -- class with configura...')
+                      SingleStyledText(' (')
+                      MixedStyledText('config_class', style='literal emphasis')   None:None <literal_emphasis>
+                           > (0,0,1,0,1) literal emphasis
+                        SingleStyledText('config_class')
+                      SingleStyledText(')')
+                      SingleStyledText(' – ')
+              LabeledFlowable()   None:None <field>
+                   > (0,0,1,0,4) field list item
+                     (0,0,0,0,4) definition list item
+                Paragraph('Returns', style='field name')
+                     > (0,0,2,0,6) field name
+                       (0,0,0,0,2) body
+                  MixedStyledText('Returns')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/__init__.py:docstring of server.create_app:0 <field_name>
+                    SingleStyledText('Returns')
+                StaticGroupedFlowables()   None:None <field_body>
+                  Paragraph('Quart – created app instance')   None:None <paragraph>
+                       > (0,0,0,0,2) body
+                    MixedStyledText('Quart – created app instance')
+                      SingleStyledText('Quart – created app instance')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		3')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('		3')
+        Tab('	')
+        Tab('	')
+        Field('3')
+          SingleStyledText('3')
+---------------------------------- page 4 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+#### UpExpandingContainer('header')
+  StaticGroupedFlowables()
+    Header('MusicGenerationWebService, Relea...')
+         > (0,0,0,0,2) header
+           (0,0,0,0,1) body
+      MixedStyledText('MusicGenerationWebService, Relea...')
+        Field('MusicGenerationWebService')
+          SingleStyledText('MusicGenerationWebService')
+        SingleStyledText(', ')
+        Field('Release 0.0.1')
+          SingleStyledText('Release 0.0.1')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('4		Chapter 2.  Module contents')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('4		Chapter 2.  Module contents')
+        Field('4')
+          SingleStyledText('4')
+        Tab('	')
+        Tab('	')
+        StringField('Chapter')
+        SingleStyledText(' ')
+        Field('2')
+          SingleStyledText('2')
+        SingleStyledText('.  ')
+        Field('Module contents')
+          SingleStyledText('Module contents')
+---------------------------------- page 5 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### FlowablesContainer('chapter title')
+  Paragraph('CHAPTER 3', style='body matter chapter label')
+       > (0,0,1,0,2) body matter chapter label
+         (0,0,0,0,2) body
+    MixedStyledText('CHAPTER 3')
+      MixedStyledText('CHAPTER ')
+        StringField('CHAPTER')
+        SingleStyledText(' ')
+      Field('3', style='number')
+           > (0,0,2,0,3) body matter chapter number
+        SingleStyledText('3')
+  Paragraph('Module contents', style='body matter chapter title')
+       > (0,0,1,0,2) body matter chapter title
+         (0,0,0,0,2) body
+    Field('Module contents')
+      SingleStyledText('Module contents')
+  Paragraph('CHAPTER 3', style='body matter chapter label')
+       > (0,0,1,0,2) body matter chapter label
+         (0,0,0,0,2) body
+    MixedStyledText('CHAPTER 3')
+      MixedStyledText('CHAPTER ')
+        StringField('CHAPTER')
+        SingleStyledText(' ')
+      Field('3', style='number')
+           > (0,0,2,0,3) body matter chapter number
+        SingleStyledText('3')
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+      Section(id='id1')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/docs/PythonDoc/source/index.rst:47 <section>
+           > (0,0,0,1,2) chapter
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		5')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('		5')
+        Tab('	')
+        Tab('	')
+        Field('5')
+          SingleStyledText('5')
+---------------------------------- page 6 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+#### UpExpandingContainer('header')
+  StaticGroupedFlowables()
+    Header('MusicGenerationWebService, Relea...')
+         > (0,0,0,0,2) header
+           (0,0,0,0,1) body
+      MixedStyledText('MusicGenerationWebService, Relea...')
+        Field('MusicGenerationWebService')
+          SingleStyledText('MusicGenerationWebService')
+        SingleStyledText(', ')
+        Field('Release 0.0.1')
+          SingleStyledText('Release 0.0.1')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('6		Chapter 3.  Module contents')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('6		Chapter 3.  Module contents')
+        Field('6')
+          SingleStyledText('6')
+        Tab('	')
+        Tab('	')
+        StringField('Chapter')
+        SingleStyledText(' ')
+        Field('3')
+          SingleStyledText('4')
+        SingleStyledText('.  ')
+        Field('Module contents')
+          SingleStyledText('Subpackages')
+---------------------------------- page 7 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### FlowablesContainer('chapter title')
+  Paragraph('CHAPTER 4', style='body matter chapter label')
+       > (0,0,1,0,2) body matter chapter label
+         (0,0,0,0,2) body
+    MixedStyledText('CHAPTER 4')
+      MixedStyledText('CHAPTER ')
+        StringField('CHAPTER')
+        SingleStyledText(' ')
+      Field('4', style='number')
+           > (0,0,2,0,3) body matter chapter number
+        SingleStyledText('4')
+  Paragraph('Subpackages', style='body matter chapter title')
+       > (0,0,1,0,2) body matter chapter title
+         (0,0,0,0,2) body
+    Field('Subpackages')
+      SingleStyledText('Subpackages')
+  Paragraph('CHAPTER 4', style='body matter chapter label')
+       > (0,0,1,0,2) body matter chapter label
+         (0,0,0,0,2) body
+    MixedStyledText('CHAPTER 4')
+      MixedStyledText('CHAPTER ')
+        StringField('CHAPTER')
+        SingleStyledText(' ')
+      Field('4', style='number')
+           > (0,0,2,0,3) body matter chapter number
+        SingleStyledText('4')
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+      Section(id='id2')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/docs/PythonDoc/source/index.rst:58 <section>
+           > (0,0,0,1,2) chapter
+        StaticGroupedFlowables()   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/docs/PythonDoc/source/index.rst:None <compound>
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		7')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('		7')
+        Tab('	')
+        Tab('	')
+        Field('7')
+          SingleStyledText('7')
+---------------------------------- page 8 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+#### UpExpandingContainer('header')
+  StaticGroupedFlowables()
+    Header('MusicGenerationWebService, Relea...')
+         > (0,0,0,0,2) header
+           (0,0,0,0,1) body
+      MixedStyledText('MusicGenerationWebService, Relea...')
+        Field('MusicGenerationWebService')
+          SingleStyledText('MusicGenerationWebService')
+        SingleStyledText(', ')
+        Field('Release 0.0.1')
+          SingleStyledText('Release 0.0.1')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('8		Chapter 4.  Subpackages')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('8		Chapter 4.  Subpackages')
+        Field('8')
+          SingleStyledText('8')
+        Tab('	')
+        Tab('	')
+        StringField('Chapter')
+        SingleStyledText(' ')
+        Field('4')
+          SingleStyledText('5')
+        SingleStyledText('.  ')
+        Field('Subpackages')
+          SingleStyledText('Submodules')
+---------------------------------- page 9 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### FlowablesContainer('chapter title')
+  Paragraph('CHAPTER 5', style='body matter chapter label')
+       > (0,0,1,0,2) body matter chapter label
+         (0,0,0,0,2) body
+    MixedStyledText('CHAPTER 5')
+      MixedStyledText('CHAPTER ')
+        StringField('CHAPTER')
+        SingleStyledText(' ')
+      Field('5', style='number')
+           > (0,0,2,0,3) body matter chapter number
+        SingleStyledText('5')
+  Paragraph('Submodules', style='body matter chapter title')
+       > (0,0,1,0,2) body matter chapter title
+         (0,0,0,0,2) body
+    Field('Submodules')
+      SingleStyledText('Submodules')
+  Paragraph('CHAPTER 5', style='body matter chapter label')
+       > (0,0,1,0,2) body matter chapter label
+         (0,0,0,0,2) body
+    MixedStyledText('CHAPTER 5')
+      MixedStyledText('CHAPTER ')
+        StringField('CHAPTER')
+        SingleStyledText(' ')
+      Field('5', style='number')
+           > (0,0,2,0,3) body matter chapter number
+        SingleStyledText('5')
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+      Section(id='submodules')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/docs/PythonDoc/source/index.rst:66 <section>
+           > (0,0,0,1,2) chapter
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		9')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('		9')
+        Tab('	')
+        Tab('	')
+        Field('9')
+          SingleStyledText('9')
+---------------------------------- page 10 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+#### UpExpandingContainer('header')
+  StaticGroupedFlowables()
+    Header('MusicGenerationWebService, Relea...')
+         > (0,0,0,0,2) header
+           (0,0,0,0,1) body
+      MixedStyledText('MusicGenerationWebService, Relea...')
+        Field('MusicGenerationWebService')
+          SingleStyledText('MusicGenerationWebService')
+        SingleStyledText(', ')
+        Field('Release 0.0.1')
+          SingleStyledText('Release 0.0.1')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('10		Chapter 5.  Submodules')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('10		Chapter 5.  Submodules')
+        Field('10')
+          SingleStyledText('10')
+        Tab('	')
+        Tab('	')
+        StringField('Chapter')
+        SingleStyledText(' ')
+        Field('5')
+          SingleStyledText('6')
+        SingleStyledText('.  ')
+        Field('Submodules')
+          SingleStyledText('server.algorythm.music_generatio...')
+---------------------------------- page 11 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### FlowablesContainer('chapter title')
+  Paragraph('CHAPTER 6', style='body matter chapter label')
+       > (0,0,1,0,2) body matter chapter label
+         (0,0,0,0,2) body
+    MixedStyledText('CHAPTER 6')
+      MixedStyledText('CHAPTER ')
+        StringField('CHAPTER')
+        SingleStyledText(' ')
+      Field('6', style='number')
+           > (0,0,2,0,3) body matter chapter number
+        SingleStyledText('6')
+  Paragraph('server.algorythm.music_generatio...', style='body matter chapter title')
+       > (0,0,1,0,2) body matter chapter title
+         (0,0,0,0,2) body
+    Field('server.algorythm.music_generatio...')
+      SingleStyledText('server.algorythm.music_generatio...')
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+      Section(id='module-server.algorythm.music_generation')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/docs/PythonDoc/source/index.rst:69 <section>
+           > (0,0,0,1,2) chapter
+        LabeledFlowable(style='object description')   None:None <desc>
+             > (0,0,1,0,2) object description
+          StaticGroupedFlowables(style='signatures')
+               > (0,0,2,0,3) object signatures
+            Paragraph('server.algorythm.music_generatio...', id='server.algorythm.music_generation.generate')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/algorythm/music_generation.py:docstring of server.algorythm.music_generation.generate:1 <desc_signature>
+                 > (0,0,2,0,5) object signature
+                   (0,0,0,0,2) body
+              MixedStyledText('server.algorythm.music_generatio...')
+                MixedStyledText('server.algorythm.music_generatio...', style='additional name part')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/algorythm/music_generation.py:docstring of server.algorythm.music_generation.generate:None <desc_addname>
+                     > (0,0,3,0,6) additional name part
+                  SingleStyledText('server.algorythm.music_generatio...')
+                MixedStyledText('generate', style='main object name')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/algorythm/music_generation.py:docstring of server.algorythm.music_generation.generate:None <desc_name>
+                     > (0,0,3,0,6) object name
+                  SingleStyledText('generate')
+                MixedStyledText(' ( genre: str, checkpoint_dir: s...')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/algorythm/music_generation.py:docstring of server.algorythm.music_generation.generate:None <desc_parameterlist>
+                  MixedStyledText(' ( genre: str, checkpoint_dir: s...')
+                    SingleStyledText(' ( ', style='parentheses')
+                         > (0,0,3,0,6) object parentheses
+                    MixedStyledText('genre: str, checkpoint_dir: str,...', style='parameter list')
+                         > (0,0,3,0,6) object parameter list
+                      MixedStyledText('genre: str', style='parameter')   None:None <desc_parameter>
+                           > (0,0,3,0,6) object parameter
+                        MixedStyledText('genre')   None:None <inline>
+                          SingleStyledText('genre')
+                        MixedStyledText(':')   None:None <inline>
+                          SingleStyledText(':')
+                        SingleStyledText(' ')
+                        MixedStyledText('str')   None:None <inline>
+                          SingleStyledText('str')
+                      SingleStyledText(', ')
+                      MixedStyledText('checkpoint_dir: str', style='parameter')   None:None <desc_parameter>
+                           > (0,0,3,0,6) object parameter
+                        MixedStyledText('checkpoint_dir')   None:None <inline>
+                          SingleStyledText('checkpoint_dir')
+                        MixedStyledText(':')   None:None <inline>
+                          SingleStyledText(':')
+                        SingleStyledText(' ')
+                        MixedStyledText('str')   None:None <inline>
+                          SingleStyledText('str')
+                      SingleStyledText(', ')
+                      MixedStyledText('sess: tensorflow.python.client.s...', style='parameter')   None:None <desc_parameter>
+                           > (0,0,3,0,6) object parameter
+                        MixedStyledText('sess')   None:None <inline>
+                          SingleStyledText('sess')
+                        MixedStyledText(':')   None:None <inline>
+                          SingleStyledText(':')
+                        SingleStyledText(' ')
+                        MixedStyledText('tensorflow.python.client.session...')   None:None <inline>
+                          SingleStyledText('tensorflow.python.client.session...')
+                      SingleStyledText(', ')
+                      MixedStyledText('params: dict', style='parameter')   None:None <desc_parameter>
+                           > (0,0,3,0,6) object parameter
+                        MixedStyledText('params')   None:None <inline>
+                          SingleStyledText('params')
+                        MixedStyledText(':')   None:None <inline>
+                          SingleStyledText(':')
+                        SingleStyledText(' ')
+                        MixedStyledText('dict')   None:None <inline>
+                          SingleStyledText('dict')
+                  SingleStyledText(' ) ', style='parentheses')
+                       > (0,0,3,0,6) object parentheses
+                MixedStyledText('→ str')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/algorythm/music_generation.py:docstring of server.algorythm.music_generation.generate:None <desc_returns>
+                  MixedStyledText('→ ')
+                    SingleStyledText('→', style='returns arrow')
+                    SingleStyledText(' ')
+                  MixedStyledText('str', style='returns')
+                       > (0,0,3,0,6) object returns
+                    SingleStyledText('str')
+          StaticGroupedFlowables(style='content')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/algorythm/music_generation.py:docstring of server.algorythm.music_generation.generate:None <desc_content>
+               > (0,0,2,0,3) object description content
+            Paragraph('Generate music given model sessi...')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/algorythm/music_generation.py:docstring of server.algorythm.music_generation.generate:1 <paragraph>
+                 > (0,0,2,0,5) object description content paragraph
+                   (0,0,0,0,2) body
+              MixedStyledText('Generate music given model sessi...')
+                SingleStyledText('Generate music given model sessi...')
+            DefinitionList(style='field list')   None:None <field_list>
+                 > (0,0,1,0,2) field list
+                   (0,0,0,0,2) definition list
+              LabeledFlowable()   None:None <field>
+                   > (0,0,1,0,4) field list item
+                     (0,0,0,0,4) definition list item
+                Paragraph('Parameters', style='field name')
+                     > (0,0,2,0,6) field name
+                       (0,0,0,0,2) body
+                  MixedStyledText('Parameters')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/algorythm/music_generation.py:docstring of server.algorythm.music_generation.generate:0 <field_name>
+                    SingleStyledText('Parameters')
+                StaticGroupedFlowables()   None:None <field_body>
+                  List(style='bulleted')   None:None <bullet_list>
+                       > (0,0,1,0,2) bulleted list
+                    ListItem()
+                         x (0,0,1,0,4) bulleted list item
+                         > fallback to default style
+                      ListItemLabel('•')
+                           > (0,0,1,0,6) bulleted list item label
+                             (0,0,0,0,2) list item label
+                          MixedStyledText('•')
+                            SingleStyledText('')
+                            SingleStyledText('•')
+                            SingleStyledText('')
+                      StaticGroupedFlowables()   None:None <list_item>
+                           > (0,0,0,0,3) list item body
+                        Paragraph('{str} -- genre name (genre) – ')   None:None <paragraph>
+                             > (0,0,0,0,5) list item paragraph
+                               (0,0,0,0,2) body
+                          MixedStyledText('{str} -- genre name (genre) – ')
+                            MixedStyledText('{str} -- genre name', style='literal strong')   None:None <literal_strong>
+                                 > (0,0,1,0,1) literal strong
+                              SingleStyledText('{str} -- genre name')
+                            SingleStyledText(' (')
+                            MixedStyledText('genre', style='literal emphasis')   None:None <literal_emphasis>
+                                 > (0,0,1,0,1) literal emphasis
+                              SingleStyledText('genre')
+                            SingleStyledText(')')
+                            SingleStyledText(' – ')
+                    ListItem()
+                         x (0,0,1,0,4) bulleted list item
+                         > fallback to default style
+                      ListItemLabel('•')
+                           > (0,0,1,0,6) bulleted list item label
+                             (0,0,0,0,2) list item label
+                          MixedStyledText('•')
+                            SingleStyledText('')
+                            SingleStyledText('•')
+                            SingleStyledText('')
+                      StaticGroupedFlowables()   None:None <list_item>
+                           > (0,0,0,0,3) list item body
+                        Paragraph('{str} -- chechpoint path (checkp...')   None:None <paragraph>
+                             > (0,0,0,0,5) list item paragraph
+                               (0,0,0,0,2) body
+                          MixedStyledText('{str} -- chechpoint path (checkp...')
+                            MixedStyledText('{str} -- chechpoint path', style='literal strong')   None:None <literal_strong>
+                                 > (0,0,1,0,1) literal strong
+                              SingleStyledText('{str} -- chechpoint path')
+                            SingleStyledText(' (')
+                            MixedStyledText('checkpoint_dir', style='literal emphasis')   None:None <literal_emphasis>
+                                 > (0,0,1,0,1) literal emphasis
+                              SingleStyledText('checkpoint_dir')
+                            SingleStyledText(')')
+                            SingleStyledText(' – ')
+                    ListItem()
+                         x (0,0,1,0,4) bulleted list item
+                         > fallback to default style
+                      ListItemLabel('•')
+                           > (0,0,1,0,6) bulleted list item label
+                             (0,0,0,0,2) list item label
+                          MixedStyledText('•')
+                            SingleStyledText('')
+                            SingleStyledText('•')
+                            SingleStyledText('')
+                      StaticGroupedFlowables()   None:None <list_item>
+                           > (0,0,0,0,3) list item body
+                        Paragraph('{tf.Session} -- model session (s...')   None:None <paragraph>
+                             > (0,0,0,0,5) list item paragraph
+                               (0,0,0,0,2) body
+                          MixedStyledText('{tf.Session} -- model session (s...')
+                            MixedStyledText('{tf.Session} -- model session', style='literal strong')   None:None <literal_strong>
+                                 > (0,0,1,0,1) literal strong
+                              SingleStyledText('{tf.Session} -- model session')
+                            SingleStyledText(' (')
+                            MixedStyledText('sess', style='literal emphasis')   None:None <literal_emphasis>
+                                 > (0,0,1,0,1) literal emphasis
+                              SingleStyledText('sess')
+                            SingleStyledText(')')
+                            SingleStyledText(' – ')
+                    ListItem()
+                         x (0,0,1,0,4) bulleted list item
+                         > fallback to default style
+                      ListItemLabel('•')
+                           > (0,0,1,0,6) bulleted list item label
+                             (0,0,0,0,2) list item label
+                          MixedStyledText('•')
+                            SingleStyledText('')
+                            SingleStyledText('•')
+                            SingleStyledText('')
+                      StaticGroupedFlowables()   None:None <list_item>
+                           > (0,0,0,0,3) list item body
+                        Paragraph('{dict} -- additional params (par...')   None:None <paragraph>
+                             > (0,0,0,0,5) list item paragraph
+                               (0,0,0,0,2) body
+                          MixedStyledText('{dict} -- additional params (par...')
+                            MixedStyledText('{dict} -- additional params', style='literal strong')   None:None <literal_strong>
+                                 > (0,0,1,0,1) literal strong
+                              SingleStyledText('{dict} -- additional params')
+                            SingleStyledText(' (')
+                            MixedStyledText('params', style='literal emphasis')   None:None <literal_emphasis>
+                                 > (0,0,1,0,1) literal emphasis
+                              SingleStyledText('params')
+                            SingleStyledText(')')
+                            SingleStyledText(' – ')
+              LabeledFlowable()   None:None <field>
+                   > (0,0,1,0,4) field list item
+                     (0,0,0,0,4) definition list item
+                Paragraph('Returns', style='field name')
+                     > (0,0,2,0,6) field name
+                       (0,0,0,0,2) body
+                  MixedStyledText('Returns')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/algorythm/music_generation.py:docstring of server.algorythm.music_generation.generate:0 <field_name>
+                    SingleStyledText('Returns')
+                StaticGroupedFlowables()   None:None <field_body>
+                  Paragraph('str – generated music')   None:None <paragraph>
+                       > (0,0,0,0,2) body
+                    MixedStyledText('str – generated music')
+                      SingleStyledText('str – generated music')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		11')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('		11')
+        Tab('	')
+        Tab('	')
+        Field('11')
+          SingleStyledText('11')
+---------------------------------- page 12 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+#### UpExpandingContainer('header')
+  StaticGroupedFlowables()
+    Header('MusicGenerationWebService, Relea...')
+         > (0,0,0,0,2) header
+           (0,0,0,0,1) body
+      MixedStyledText('MusicGenerationWebService, Relea...')
+        Field('MusicGenerationWebService')
+          SingleStyledText('MusicGenerationWebService')
+        SingleStyledText(', ')
+        Field('Release 0.0.1')
+          SingleStyledText('Release 0.0.1')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('12		Chapter 6.  server.algorythm...')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('12		Chapter 6.  server.algorythm...')
+        Field('12')
+          SingleStyledText('12')
+        Tab('	')
+        Tab('	')
+        StringField('Chapter')
+        SingleStyledText(' ')
+        Field('6')
+          SingleStyledText('6')
+        SingleStyledText('.  ')
+        Field('server.algorythm.music_generatio...')
+          SingleStyledText('server.algorythm.music_generatio...')
+---------------------------------- page 13 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### FlowablesContainer('chapter title')
+  Paragraph('CHAPTER 7', style='body matter chapter label')
+       > (0,0,1,0,2) body matter chapter label
+         (0,0,0,0,2) body
+    MixedStyledText('CHAPTER 7')
+      MixedStyledText('CHAPTER ')
+        StringField('CHAPTER')
+        SingleStyledText(' ')
+      Field('7', style='number')
+           > (0,0,2,0,3) body matter chapter number
+        SingleStyledText('7')
+  Paragraph('server.algorythm.routes module', style='body matter chapter title')
+       > (0,0,1,0,2) body matter chapter title
+         (0,0,0,0,2) body
+    Field('server.algorythm.routes module')
+      SingleStyledText('server.algorythm.routes module')
+  Paragraph('CHAPTER 7', style='body matter chapter label')
+       > (0,0,1,0,2) body matter chapter label
+         (0,0,0,0,2) body
+    MixedStyledText('CHAPTER 7')
+      MixedStyledText('CHAPTER ')
+        StringField('CHAPTER')
+        SingleStyledText(' ')
+      Field('7', style='number')
+           > (0,0,2,0,3) body matter chapter number
+        SingleStyledText('7')
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+      Section(id='server-algorythm-routes-module')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/docs/PythonDoc/source/index.rst:77 <section>
+           > (0,0,0,1,2) chapter
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		13')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('		13')
+        Tab('	')
+        Tab('	')
+        Field('13')
+          SingleStyledText('13')
+---------------------------------- page 14 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+#### UpExpandingContainer('header')
+  StaticGroupedFlowables()
+    Header('MusicGenerationWebService, Relea...')
+         > (0,0,0,0,2) header
+           (0,0,0,0,1) body
+      MixedStyledText('MusicGenerationWebService, Relea...')
+        Field('MusicGenerationWebService')
+          SingleStyledText('MusicGenerationWebService')
+        SingleStyledText(', ')
+        Field('Release 0.0.1')
+          SingleStyledText('Release 0.0.1')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('14		Chapter 7.  server.algorythm...')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('14		Chapter 7.  server.algorythm...')
+        Field('14')
+          SingleStyledText('14')
+        Tab('	')
+        Tab('	')
+        StringField('Chapter')
+        SingleStyledText(' ')
+        Field('7')
+          SingleStyledText('8')
+        SingleStyledText('.  ')
+        Field('server.algorythm.routes module')
+          SingleStyledText('Module contents')
+---------------------------------- page 15 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### FlowablesContainer('chapter title')
+  Paragraph('CHAPTER 8', style='body matter chapter label')
+       > (0,0,1,0,2) body matter chapter label
+         (0,0,0,0,2) body
+    MixedStyledText('CHAPTER 8')
+      MixedStyledText('CHAPTER ')
+        StringField('CHAPTER')
+        SingleStyledText(' ')
+      Field('8', style='number')
+           > (0,0,2,0,3) body matter chapter number
+        SingleStyledText('8')
+  Paragraph('Module contents', style='body matter chapter title')
+       > (0,0,1,0,2) body matter chapter title
+         (0,0,0,0,2) body
+    Field('Module contents')
+      SingleStyledText('Module contents')
+  Paragraph('CHAPTER 8', style='body matter chapter label')
+       > (0,0,1,0,2) body matter chapter label
+         (0,0,0,0,2) body
+    MixedStyledText('CHAPTER 8')
+      MixedStyledText('CHAPTER ')
+        StringField('CHAPTER')
+        SingleStyledText(' ')
+      Field('8', style='number')
+           > (0,0,2,0,3) body matter chapter number
+        SingleStyledText('8')
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+      Section(id='id3')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/docs/PythonDoc/source/index.rst:86 <section>
+           > (0,0,0,1,2) chapter
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		15')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('		15')
+        Tab('	')
+        Tab('	')
+        Field('15')
+          SingleStyledText('15')
+---------------------------------- page 16 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+#### UpExpandingContainer('header')
+  StaticGroupedFlowables()
+    Header('MusicGenerationWebService, Relea...')
+         > (0,0,0,0,2) header
+           (0,0,0,0,1) body
+      MixedStyledText('MusicGenerationWebService, Relea...')
+        Field('MusicGenerationWebService')
+          SingleStyledText('MusicGenerationWebService')
+        SingleStyledText(', ')
+        Field('Release 0.0.1')
+          SingleStyledText('Release 0.0.1')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('16		Chapter 8.  Module contents')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('16		Chapter 8.  Module contents')
+        Field('16')
+          SingleStyledText('16')
+        Tab('	')
+        Tab('	')
+        StringField('Chapter')
+        SingleStyledText(' ')
+        Field('8')
+          SingleStyledText('9')
+        SingleStyledText('.  ')
+        Field('Module contents')
+          SingleStyledText('Submodules')
+---------------------------------- page 17 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### FlowablesContainer('chapter title')
+  Paragraph('CHAPTER 9', style='body matter chapter label')
+       > (0,0,1,0,2) body matter chapter label
+         (0,0,0,0,2) body
+    MixedStyledText('CHAPTER 9')
+      MixedStyledText('CHAPTER ')
+        StringField('CHAPTER')
+        SingleStyledText(' ')
+      Field('9', style='number')
+           > (0,0,2,0,3) body matter chapter number
+        SingleStyledText('9')
+  Paragraph('Submodules', style='body matter chapter title')
+       > (0,0,1,0,2) body matter chapter title
+         (0,0,0,0,2) body
+    Field('Submodules')
+      SingleStyledText('Submodules')
+  Paragraph('CHAPTER 9', style='body matter chapter label')
+       > (0,0,1,0,2) body matter chapter label
+         (0,0,0,0,2) body
+    MixedStyledText('CHAPTER 9')
+      MixedStyledText('CHAPTER ')
+        StringField('CHAPTER')
+        SingleStyledText(' ')
+      Field('9', style='number')
+           > (0,0,2,0,3) body matter chapter number
+        SingleStyledText('9')
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+      Section(id='id4')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/docs/PythonDoc/source/index.rst:97 <section>
+           > (0,0,0,1,2) chapter
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		17')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('		17')
+        Tab('	')
+        Tab('	')
+        Field('17')
+          SingleStyledText('17')
+---------------------------------- page 18 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+#### UpExpandingContainer('header')
+  StaticGroupedFlowables()
+    Header('MusicGenerationWebService, Relea...')
+         > (0,0,0,0,2) header
+           (0,0,0,0,1) body
+      MixedStyledText('MusicGenerationWebService, Relea...')
+        Field('MusicGenerationWebService')
+          SingleStyledText('MusicGenerationWebService')
+        SingleStyledText(', ')
+        Field('Release 0.0.1')
+          SingleStyledText('Release 0.0.1')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('18		Chapter 9.  Submodules')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('18		Chapter 9.  Submodules')
+        Field('18')
+          SingleStyledText('18')
+        Tab('	')
+        Tab('	')
+        StringField('Chapter')
+        SingleStyledText(' ')
+        Field('9')
+          SingleStyledText('10')
+        SingleStyledText('.  ')
+        Field('Submodules')
+          SingleStyledText('server.errors.handlers module')
+---------------------------------- page 19 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### FlowablesContainer('chapter title')
+  Paragraph('CHAPTER 10', style='body matter chapter label')
+       > (0,0,1,0,2) body matter chapter label
+         (0,0,0,0,2) body
+    MixedStyledText('CHAPTER 10')
+      MixedStyledText('CHAPTER ')
+        StringField('CHAPTER')
+        SingleStyledText(' ')
+      Field('10', style='number')
+           > (0,0,2,0,3) body matter chapter number
+        SingleStyledText('10')
+  Paragraph('server.errors.handlers module', style='body matter chapter title')
+       > (0,0,1,0,2) body matter chapter title
+         (0,0,0,0,2) body
+    Field('server.errors.handlers module')
+      SingleStyledText('server.errors.handlers module')
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+      Section(id='module-server.errors.handlers')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/docs/PythonDoc/source/index.rst:100 <section>
+           > (0,0,0,1,2) chapter
+        LabeledFlowable(style='object description')   None:None <desc>
+             > (0,0,1,0,2) object description
+          StaticGroupedFlowables(style='signatures')
+               > (0,0,2,0,3) object signatures
+            Paragraph('server.errors.handlers.bad_reque...', id='server.errors.handlers.bad_request')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/errors/handlers.py:docstring of server.errors.handlers.bad_request:1 <desc_signature>
+                 > (0,0,2,0,5) object signature
+                   (0,0,0,0,2) body
+              MixedStyledText('server.errors.handlers.bad_reque...')
+                MixedStyledText('server.errors.handlers.', style='additional name part')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/errors/handlers.py:docstring of server.errors.handlers.bad_request:None <desc_addname>
+                     > (0,0,3,0,6) additional name part
+                  SingleStyledText('server.errors.handlers.')
+                MixedStyledText('bad_request', style='main object name')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/errors/handlers.py:docstring of server.errors.handlers.bad_request:None <desc_name>
+                     > (0,0,3,0,6) object name
+                  SingleStyledText('bad_request')
+                MixedStyledText(' ( message ) ')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/errors/handlers.py:docstring of server.errors.handlers.bad_request:None <desc_parameterlist>
+                  MixedStyledText(' ( message')
+                    SingleStyledText(' ( ', style='parentheses')
+                         > (0,0,3,0,6) object parentheses
+                    MixedStyledText('message', style='parameter list')
+                         > (0,0,3,0,6) object parameter list
+                      MixedStyledText('message', style='parameter')   None:None <desc_parameter>
+                           > (0,0,3,0,6) object parameter
+                        MixedStyledText('message')   None:None <inline>
+                          SingleStyledText('message')
+                  SingleStyledText(' ) ', style='parentheses')
+                       > (0,0,3,0,6) object parentheses
+          StaticGroupedFlowables(style='content')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/errors/handlers.py:docstring of server.errors.handlers.bad_request:None <desc_content>
+               > (0,0,2,0,3) object description content
+        LabeledFlowable(style='object description')   None:None <desc>
+             > (0,0,1,0,2) object description
+          StaticGroupedFlowables(style='signatures')
+               > (0,0,2,0,3) object signatures
+            Paragraph('server.errors.handlers.error_res...', id='server.errors.handlers.error_response')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/errors/handlers.py:docstring of server.errors.handlers.error_response:1 <desc_signature>
+                 > (0,0,2,0,5) object signature
+                   (0,0,0,0,2) body
+              MixedStyledText('server.errors.handlers.error_res...')
+                MixedStyledText('server.errors.handlers.', style='additional name part')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/errors/handlers.py:docstring of server.errors.handlers.error_response:None <desc_addname>
+                     > (0,0,3,0,6) additional name part
+                  SingleStyledText('server.errors.handlers.')
+                MixedStyledText('error_response', style='main object name')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/errors/handlers.py:docstring of server.errors.handlers.error_response:None <desc_name>
+                     > (0,0,3,0,6) object name
+                  SingleStyledText('error_response')
+                MixedStyledText(' ( status_code, message=None ) ')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/errors/handlers.py:docstring of server.errors.handlers.error_response:None <desc_parameterlist>
+                  MixedStyledText(' ( status_code, message=None')
+                    SingleStyledText(' ( ', style='parentheses')
+                         > (0,0,3,0,6) object parentheses
+                    MixedStyledText('status_code, message=None', style='parameter list')
+                         > (0,0,3,0,6) object parameter list
+                      MixedStyledText('status_code', style='parameter')   None:None <desc_parameter>
+                           > (0,0,3,0,6) object parameter
+                        MixedStyledText('status_code')   None:None <inline>
+                          SingleStyledText('status_code')
+                      SingleStyledText(', ')
+                      MixedStyledText('message=None', style='parameter')   None:None <desc_parameter>
+                           > (0,0,3,0,6) object parameter
+                        MixedStyledText('message')   None:None <inline>
+                          SingleStyledText('message')
+                        MixedStyledText('=')   None:None <inline>
+                          SingleStyledText('=')
+                        MixedStyledText('None')   None:None <inline>
+                          SingleStyledText('None')
+                  SingleStyledText(' ) ', style='parentheses')
+                       > (0,0,3,0,6) object parentheses
+          StaticGroupedFlowables(style='content')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/errors/handlers.py:docstring of server.errors.handlers.error_response:None <desc_content>
+               > (0,0,2,0,3) object description content
+        LabeledFlowable(style='object description')   None:None <desc>
+             > (0,0,1,0,2) object description
+          StaticGroupedFlowables(style='signatures')
+               > (0,0,2,0,3) object signatures
+            Paragraph('async server.errors.handlers.int...', id='server.errors.handlers.internal_error')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/errors/handlers.py:docstring of server.errors.handlers.internal_error:1 <desc_signature>
+                 > (0,0,2,0,5) object signature
+                   (0,0,0,0,2) body
+              MixedStyledText('async server.errors.handlers.int...')
+                MixedStyledText('async ', style='annotation')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/errors/handlers.py:docstring of server.errors.handlers.internal_error:None <desc_annotation>
+                     > (0,0,3,0,6) object annotation
+                  SingleStyledText('async ')
+                MixedStyledText('server.errors.handlers.', style='additional name part')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/errors/handlers.py:docstring of server.errors.handlers.internal_error:None <desc_addname>
+                     > (0,0,3,0,6) additional name part
+                  SingleStyledText('server.errors.handlers.')
+                MixedStyledText('internal_error', style='main object name')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/errors/handlers.py:docstring of server.errors.handlers.internal_error:None <desc_name>
+                     > (0,0,3,0,6) object name
+                  SingleStyledText('internal_error')
+                MixedStyledText(' ( error ) ')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/errors/handlers.py:docstring of server.errors.handlers.internal_error:None <desc_parameterlist>
+                  MixedStyledText(' ( error')
+                    SingleStyledText(' ( ', style='parentheses')
+                         > (0,0,3,0,6) object parentheses
+                    MixedStyledText('error', style='parameter list')
+                         > (0,0,3,0,6) object parameter list
+                      MixedStyledText('error', style='parameter')   None:None <desc_parameter>
+                           > (0,0,3,0,6) object parameter
+                        MixedStyledText('error')   None:None <inline>
+                          SingleStyledText('error')
+                  SingleStyledText(' ) ', style='parentheses')
+                       > (0,0,3,0,6) object parentheses
+          StaticGroupedFlowables(style='content')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/errors/handlers.py:docstring of server.errors.handlers.internal_error:None <desc_content>
+               > (0,0,2,0,3) object description content
+        LabeledFlowable(style='object description')   None:None <desc>
+             > (0,0,1,0,2) object description
+          StaticGroupedFlowables(style='signatures')
+               > (0,0,2,0,3) object signatures
+            Paragraph('async server.errors.handlers.not...', id='server.errors.handlers.not_found_error')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/errors/handlers.py:docstring of server.errors.handlers.not_found_error:1 <desc_signature>
+                 > (0,0,2,0,5) object signature
+                   (0,0,0,0,2) body
+              MixedStyledText('async server.errors.handlers.not...')
+                MixedStyledText('async ', style='annotation')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/errors/handlers.py:docstring of server.errors.handlers.not_found_error:None <desc_annotation>
+                     > (0,0,3,0,6) object annotation
+                  SingleStyledText('async ')
+                MixedStyledText('server.errors.handlers.', style='additional name part')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/errors/handlers.py:docstring of server.errors.handlers.not_found_error:None <desc_addname>
+                     > (0,0,3,0,6) additional name part
+                  SingleStyledText('server.errors.handlers.')
+                MixedStyledText('not_found_error', style='main object name')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/errors/handlers.py:docstring of server.errors.handlers.not_found_error:None <desc_name>
+                     > (0,0,3,0,6) object name
+                  SingleStyledText('not_found_error')
+                MixedStyledText(' ( error ) ')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/errors/handlers.py:docstring of server.errors.handlers.not_found_error:None <desc_parameterlist>
+                  MixedStyledText(' ( error')
+                    SingleStyledText(' ( ', style='parentheses')
+                         > (0,0,3,0,6) object parentheses
+                    MixedStyledText('error', style='parameter list')
+                         > (0,0,3,0,6) object parameter list
+                      MixedStyledText('error', style='parameter')   None:None <desc_parameter>
+                           > (0,0,3,0,6) object parameter
+                        MixedStyledText('error')   None:None <inline>
+                          SingleStyledText('error')
+                  SingleStyledText(' ) ', style='parentheses')
+                       > (0,0,3,0,6) object parentheses
+          StaticGroupedFlowables(style='content')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/errors/handlers.py:docstring of server.errors.handlers.not_found_error:None <desc_content>
+               > (0,0,2,0,3) object description content
+        LabeledFlowable(style='object description')   None:None <desc>
+             > (0,0,1,0,2) object description
+          StaticGroupedFlowables(style='signatures')
+               > (0,0,2,0,3) object signatures
+            Paragraph('server.errors.handlers.wants_jso...', id='server.errors.handlers.wants_json_response')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/errors/handlers.py:docstring of server.errors.handlers.wants_json_response:1 <desc_signature>
+                 > (0,0,2,0,5) object signature
+                   (0,0,0,0,2) body
+              MixedStyledText('server.errors.handlers.wants_jso...')
+                MixedStyledText('server.errors.handlers.', style='additional name part')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/errors/handlers.py:docstring of server.errors.handlers.wants_json_response:None <desc_addname>
+                     > (0,0,3,0,6) additional name part
+                  SingleStyledText('server.errors.handlers.')
+                MixedStyledText('wants_json_response', style='main object name')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/errors/handlers.py:docstring of server.errors.handlers.wants_json_response:None <desc_name>
+                     > (0,0,3,0,6) object name
+                  SingleStyledText('wants_json_response')
+                MixedStyledText(' (  ) ')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/errors/handlers.py:docstring of server.errors.handlers.wants_json_response:None <desc_parameterlist>
+                  MixedStyledText(' ( ')
+                    SingleStyledText(' ( ', style='parentheses')
+                         > (0,0,3,0,6) object parentheses
+                    MixedStyledText('', style='parameter list')
+                         > (0,0,3,0,6) object parameter list
+                  SingleStyledText(' ) ', style='parentheses')
+                       > (0,0,3,0,6) object parentheses
+          StaticGroupedFlowables(style='content')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/errors/handlers.py:docstring of server.errors.handlers.wants_json_response:None <desc_content>
+               > (0,0,2,0,3) object description content
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		19')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('		19')
+        Tab('	')
+        Tab('	')
+        Field('19')
+          SingleStyledText('19')
+---------------------------------- page 20 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+#### UpExpandingContainer('header')
+  StaticGroupedFlowables()
+    Header('MusicGenerationWebService, Relea...')
+         > (0,0,0,0,2) header
+           (0,0,0,0,1) body
+      MixedStyledText('MusicGenerationWebService, Relea...')
+        Field('MusicGenerationWebService')
+          SingleStyledText('MusicGenerationWebService')
+        SingleStyledText(', ')
+        Field('Release 0.0.1')
+          SingleStyledText('Release 0.0.1')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('20		Chapter 10.  server.errors.h...')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('20		Chapter 10.  server.errors.h...')
+        Field('20')
+          SingleStyledText('20')
+        Tab('	')
+        Tab('	')
+        StringField('Chapter')
+        SingleStyledText(' ')
+        Field('10')
+          SingleStyledText('10')
+        SingleStyledText('.  ')
+        Field('server.errors.handlers module')
+          SingleStyledText('server.errors.handlers module')
+---------------------------------- page 21 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### FlowablesContainer('chapter title')
+  Paragraph('CHAPTER 11', style='body matter chapter label')
+       > (0,0,1,0,2) body matter chapter label
+         (0,0,0,0,2) body
+    MixedStyledText('CHAPTER 11')
+      MixedStyledText('CHAPTER ')
+        StringField('CHAPTER')
+        SingleStyledText(' ')
+      Field('11', style='number')
+           > (0,0,2,0,3) body matter chapter number
+        SingleStyledText('11')
+  Paragraph('Module contents', style='body matter chapter title')
+       > (0,0,1,0,2) body matter chapter title
+         (0,0,0,0,2) body
+    Field('Module contents')
+      SingleStyledText('Module contents')
+  Paragraph('CHAPTER 11', style='body matter chapter label')
+       > (0,0,1,0,2) body matter chapter label
+         (0,0,0,0,2) body
+    MixedStyledText('CHAPTER 11')
+      MixedStyledText('CHAPTER ')
+        StringField('CHAPTER')
+        SingleStyledText(' ')
+      Field('11', style='number')
+           > (0,0,2,0,3) body matter chapter number
+        SingleStyledText('11')
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+      Section(id='id5')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/docs/PythonDoc/source/index.rst:109 <section>
+           > (0,0,0,1,2) chapter
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		21')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('		21')
+        Tab('	')
+        Tab('	')
+        Field('21')
+          SingleStyledText('21')
+---------------------------------- page 22 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+#### UpExpandingContainer('header')
+  StaticGroupedFlowables()
+    Header('MusicGenerationWebService, Relea...')
+         > (0,0,0,0,2) header
+           (0,0,0,0,1) body
+      MixedStyledText('MusicGenerationWebService, Relea...')
+        Field('MusicGenerationWebService')
+          SingleStyledText('MusicGenerationWebService')
+        SingleStyledText(', ')
+        Field('Release 0.0.1')
+          SingleStyledText('Release 0.0.1')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('22		Chapter 11.  Module contents')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('22		Chapter 11.  Module contents')
+        Field('22')
+          SingleStyledText('22')
+        Tab('	')
+        Tab('	')
+        StringField('Chapter')
+        SingleStyledText(' ')
+        Field('11')
+          SingleStyledText('12')
+        SingleStyledText('.  ')
+        Field('Module contents')
+          SingleStyledText('Submodules')
+---------------------------------- page 23 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### FlowablesContainer('chapter title')
+  Paragraph('CHAPTER 12', style='body matter chapter label')
+       > (0,0,1,0,2) body matter chapter label
+         (0,0,0,0,2) body
+    MixedStyledText('CHAPTER 12')
+      MixedStyledText('CHAPTER ')
+        StringField('CHAPTER')
+        SingleStyledText(' ')
+      Field('12', style='number')
+           > (0,0,2,0,3) body matter chapter number
+        SingleStyledText('12')
+  Paragraph('Submodules', style='body matter chapter title')
+       > (0,0,1,0,2) body matter chapter title
+         (0,0,0,0,2) body
+    Field('Submodules')
+      SingleStyledText('Submodules')
+  Paragraph('CHAPTER 12', style='body matter chapter label')
+       > (0,0,1,0,2) body matter chapter label
+         (0,0,0,0,2) body
+    MixedStyledText('CHAPTER 12')
+      MixedStyledText('CHAPTER ')
+        StringField('CHAPTER')
+        SingleStyledText(' ')
+      Field('12', style='number')
+           > (0,0,2,0,3) body matter chapter number
+        SingleStyledText('12')
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+      Section(id='id6')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/docs/PythonDoc/source/index.rst:120 <section>
+           > (0,0,0,1,2) chapter
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		23')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('		23')
+        Tab('	')
+        Tab('	')
+        Field('23')
+          SingleStyledText('23')
+---------------------------------- page 24 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+#### UpExpandingContainer('header')
+  StaticGroupedFlowables()
+    Header('MusicGenerationWebService, Relea...')
+         > (0,0,0,0,2) header
+           (0,0,0,0,1) body
+      MixedStyledText('MusicGenerationWebService, Relea...')
+        Field('MusicGenerationWebService')
+          SingleStyledText('MusicGenerationWebService')
+        SingleStyledText(', ')
+        Field('Release 0.0.1')
+          SingleStyledText('Release 0.0.1')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('24		Chapter 12.  Submodules')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('24		Chapter 12.  Submodules')
+        Field('24')
+          SingleStyledText('24')
+        Tab('	')
+        Tab('	')
+        StringField('Chapter')
+        SingleStyledText(' ')
+        Field('12')
+          SingleStyledText('13')
+        SingleStyledText('.  ')
+        Field('Submodules')
+          SingleStyledText('server.main.routes module')
+---------------------------------- page 25 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### FlowablesContainer('chapter title')
+  Paragraph('CHAPTER 13', style='body matter chapter label')
+       > (0,0,1,0,2) body matter chapter label
+         (0,0,0,0,2) body
+    MixedStyledText('CHAPTER 13')
+      MixedStyledText('CHAPTER ')
+        StringField('CHAPTER')
+        SingleStyledText(' ')
+      Field('13', style='number')
+           > (0,0,2,0,3) body matter chapter number
+        SingleStyledText('13')
+  Paragraph('server.main.routes module', style='body matter chapter title')
+       > (0,0,1,0,2) body matter chapter title
+         (0,0,0,0,2) body
+    Field('server.main.routes module')
+      SingleStyledText('server.main.routes module')
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+      Section(id='module-server.main.routes')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/docs/PythonDoc/source/index.rst:123 <section>
+           > (0,0,0,1,2) chapter
+        LabeledFlowable(style='object description')   None:None <desc>
+             > (0,0,1,0,2) object description
+          StaticGroupedFlowables(style='signatures')
+               > (0,0,2,0,3) object signatures
+            Paragraph('class server.main.routes.HealthC...', id='server.main.routes.HealthCheck')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck:1 <desc_signature>
+                 > (0,0,2,0,5) object signature
+                   (0,0,0,0,2) body
+              MixedStyledText('class server.main.routes.HealthC...')
+                MixedStyledText('class ', style='annotation')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck:None <desc_annotation>
+                     > (0,0,3,0,6) object annotation
+                  SingleStyledText('class ')
+                MixedStyledText('server.main.routes.', style='additional name part')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck:None <desc_addname>
+                     > (0,0,3,0,6) additional name part
+                  SingleStyledText('server.main.routes.')
+                MixedStyledText('HealthCheck', style='main object name')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck:None <desc_name>
+                     > (0,0,3,0,6) object name
+                  SingleStyledText('HealthCheck')
+          StaticGroupedFlowables(style='content')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck:None <desc_content>
+               > (0,0,2,0,3) object description content
+            Paragraph('Bases: quart_openapi.Resource')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck:1 <paragraph>
+                 > (0,0,2,0,5) object description content paragraph
+                   (0,0,0,0,2) body
+              MixedStyledText('Bases: quart_openapi.Resource')
+                SingleStyledText('Bases: ')
+                MixedStyledText('quart_openapi.Resource', style='monospaced')   None:None <literal>
+                     > (0,0,1,0,1) monospaced
+                  SingleStyledText('quart_openapi.Resource')
+            Paragraph('Server success startup checker')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck:1 <paragraph>
+                 > (0,0,2,0,5) object description content paragraph
+                   (0,0,0,0,2) body
+              MixedStyledText('Server success startup checker')
+                SingleStyledText('Server success startup checker')
+            DefinitionList()   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck.get:None <definition_list>
+                 > (0,0,0,0,2) definition list
+              LabeledFlowable()   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck:5 <definition_list_item>
+                   > (0,0,0,0,4) definition list item
+                StaticGroupedFlowables(style='definition term')
+                     > (0,0,1,0,5) definition term
+                  Paragraph('Extends:')
+                       > (0,0,1,0,7) definition term paragraph
+                         (0,0,0,0,2) body
+                    MixedStyledText('Extends:')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck:5 <term>
+                      SingleStyledText('Extends:')
+                StaticGroupedFlowables(style='definition')   None:None <definition>
+                     > (0,0,1,0,5) definition
+                  Paragraph('Resource')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck:4 <paragraph>
+                       > (0,0,1,0,7) definition paragraph
+                         (0,0,0,0,2) body
+                    MixedStyledText('Resource')
+                      SingleStyledText('Resource')
+            LabeledFlowable(style='object description')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck.get:None <desc>
+                 > (0,0,1,0,2) object description
+              StaticGroupedFlowables(style='signatures')
+                   > (0,0,2,0,3) object signatures
+                Paragraph('async get (  ) → quart.wrappers....', id='server.main.routes.HealthCheck.get')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck.get:1 <desc_signature>
+                     > (0,0,2,0,5) object signature
+                       (0,0,0,0,2) body
+                  MixedStyledText('async get (  ) → quart.wrappers....')
+                    MixedStyledText('async ', style='annotation')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck.get:None <desc_annotation>
+                         > (0,0,3,0,6) object annotation
+                      SingleStyledText('async ')
+                    MixedStyledText('get', style='main object name')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck.get:None <desc_name>
+                         > (0,0,3,0,6) object name
+                      SingleStyledText('get')
+                    MixedStyledText(' (  ) ')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck.get:None <desc_parameterlist>
+                      MixedStyledText(' ( ')
+                        SingleStyledText(' ( ', style='parentheses')
+                             > (0,0,3,0,6) object parentheses
+                        MixedStyledText('', style='parameter list')
+                             > (0,0,3,0,6) object parameter list
+                      SingleStyledText(' ) ', style='parentheses')
+                           > (0,0,3,0,6) object parentheses
+                    MixedStyledText('→ quart.wrappers.response.Respon...')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck.get:None <desc_returns>
+                      MixedStyledText('→ ')
+                        SingleStyledText('→', style='returns arrow')
+                        SingleStyledText(' ')
+                      MixedStyledText('quart.wrappers.response.Response', style='returns')
+                           > (0,0,3,0,6) object returns
+                        SingleStyledText('quart.wrappers.response.Response')
+              StaticGroupedFlowables(style='content')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck.get:None <desc_content>
+                   > (0,0,2,0,3) object description content
+                Paragraph('GET checker')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck.get:1 <paragraph>
+                     > (0,0,2,0,5) object description content paragraph
+                       (0,0,0,0,2) body
+                  MixedStyledText('GET checker')
+                    SingleStyledText('GET checker')
+                Paragraph('Must return json with success st...')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck.get:3 <paragraph>
+                     > (0,0,2,0,5) object description content paragraph
+                       (0,0,0,0,2) body
+                  MixedStyledText('Must return json with success st...')
+                    SingleStyledText('Must return json with success st...')
+            LabeledFlowable(style='object description')   None:None <desc>
+                 > (0,0,1,0,2) object description
+              StaticGroupedFlowables(style='signatures')
+                   > (0,0,2,0,3) object signatures
+                Paragraph('methods: Optional[List[str]] = [...', id='server.main.routes.HealthCheck.methods')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck.methods:1 <desc_signature>
+                     > (0,0,2,0,5) object signature
+                       (0,0,0,0,2) body
+                  MixedStyledText('methods: Optional[List[str]] = [...')
+                    MixedStyledText('methods', style='main object name')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck.methods:None <desc_name>
+                         > (0,0,3,0,6) object name
+                      SingleStyledText('methods')
+                    MixedStyledText(': Optional[List[str]]', style='annotation')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck.methods:None <desc_annotation>
+                         > (0,0,3,0,6) object annotation
+                      SingleStyledText(': Optional[List[str]]')
+                    MixedStyledText(' = ['GET', 'POST']', style='annotation')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck.methods:None <desc_annotation>
+                         > (0,0,3,0,6) object annotation
+                      SingleStyledText(' = ['GET', 'POST']')
+              StaticGroupedFlowables(style='content')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck.methods:None <desc_content>
+                   > (0,0,2,0,3) object description content
+            LabeledFlowable(style='object description')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck.post:None <desc>
+                 > (0,0,1,0,2) object description
+              StaticGroupedFlowables(style='signatures')
+                   > (0,0,2,0,3) object signatures
+                Paragraph('async post (  ) → quart.wrappers...', id='server.main.routes.HealthCheck.post')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck.post:1 <desc_signature>
+                     > (0,0,2,0,5) object signature
+                       (0,0,0,0,2) body
+                  MixedStyledText('async post (  ) → quart.wrappers...')
+                    MixedStyledText('async ', style='annotation')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck.post:None <desc_annotation>
+                         > (0,0,3,0,6) object annotation
+                      SingleStyledText('async ')
+                    MixedStyledText('post', style='main object name')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck.post:None <desc_name>
+                         > (0,0,3,0,6) object name
+                      SingleStyledText('post')
+                    MixedStyledText(' (  ) ')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck.post:None <desc_parameterlist>
+                      MixedStyledText(' ( ')
+                        SingleStyledText(' ( ', style='parentheses')
+                             > (0,0,3,0,6) object parentheses
+                        MixedStyledText('', style='parameter list')
+                             > (0,0,3,0,6) object parameter list
+                      SingleStyledText(' ) ', style='parentheses')
+                           > (0,0,3,0,6) object parentheses
+                    MixedStyledText('→ quart.wrappers.response.Respon...')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck.post:None <desc_returns>
+                      MixedStyledText('→ ')
+                        SingleStyledText('→', style='returns arrow')
+                        SingleStyledText(' ')
+                      MixedStyledText('quart.wrappers.response.Response', style='returns')
+                           > (0,0,3,0,6) object returns
+                        SingleStyledText('quart.wrappers.response.Response')
+              StaticGroupedFlowables(style='content')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck.post:None <desc_content>
+                   > (0,0,2,0,3) object description content
+                Paragraph('POST checker')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck.post:1 <paragraph>
+                     > (0,0,2,0,5) object description content paragraph
+                       (0,0,0,0,2) body
+                  MixedStyledText('POST checker')
+                    SingleStyledText('POST checker')
+                Paragraph('Must get data and return json wi...')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.HealthCheck.post:3 <paragraph>
+                     > (0,0,2,0,5) object description content paragraph
+                       (0,0,0,0,2) body
+                  MixedStyledText('Must get data and return json wi...')
+                    SingleStyledText('Must get data and return json wi...')
+        LabeledFlowable(style='object description')   None:None <desc>
+             > (0,0,1,0,2) object description
+          StaticGroupedFlowables(style='signatures')
+               > (0,0,2,0,3) object signatures
+            Paragraph('class server.main.routes.Service', id='server.main.routes.Service')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service:1 <desc_signature>
+                 > (0,0,2,0,5) object signature
+                   (0,0,0,0,2) body
+              MixedStyledText('class server.main.routes.Service')
+                MixedStyledText('class ', style='annotation')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service:None <desc_annotation>
+                     > (0,0,3,0,6) object annotation
+                  SingleStyledText('class ')
+                MixedStyledText('server.main.routes.', style='additional name part')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service:None <desc_addname>
+                     > (0,0,3,0,6) additional name part
+                  SingleStyledText('server.main.routes.')
+                MixedStyledText('Service', style='main object name')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service:None <desc_name>
+                     > (0,0,3,0,6) object name
+                  SingleStyledText('Service')
+          StaticGroupedFlowables(style='content')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service:None <desc_content>
+               > (0,0,2,0,3) object description content
+            Paragraph('Bases: quart_openapi.Resource')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service:1 <paragraph>
+                 > (0,0,2,0,5) object description content paragraph
+                   (0,0,0,0,2) body
+              MixedStyledText('Bases: quart_openapi.Resource')
+                SingleStyledText('Bases: ')
+                MixedStyledText('quart_openapi.Resource', style='monospaced')   None:None <literal>
+                     > (0,0,1,0,1) monospaced
+                  SingleStyledText('quart_openapi.Resource')
+            Paragraph('Main page')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service:1 <paragraph>
+                 > (0,0,2,0,5) object description content paragraph
+                   (0,0,0,0,2) body
+              MixedStyledText('Main page')
+                SingleStyledText('Main page')
+            Paragraph('Serve client side')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service:3 <paragraph>
+                 > (0,0,2,0,5) object description content paragraph
+                   (0,0,0,0,2) body
+              MixedStyledText('Serve client side')
+                SingleStyledText('Serve client side')
+            DefinitionList()   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service.genres:None <definition_list>
+                 > (0,0,0,0,2) definition list
+              LabeledFlowable()   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service:7 <definition_list_item>
+                   > (0,0,0,0,4) definition list item
+                StaticGroupedFlowables(style='definition term')
+                     > (0,0,1,0,5) definition term
+                  Paragraph('Extends:')
+                       > (0,0,1,0,7) definition term paragraph
+                         (0,0,0,0,2) body
+                    MixedStyledText('Extends:')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service:7 <term>
+                      SingleStyledText('Extends:')
+                StaticGroupedFlowables(style='definition')   None:None <definition>
+                     > (0,0,1,0,5) definition
+                  Paragraph('Resource')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service:6 <paragraph>
+                       > (0,0,1,0,7) definition paragraph
+                         (0,0,0,0,2) body
+                    MixedStyledText('Resource')
+                      SingleStyledText('Resource')
+            LabeledFlowable(style='object description')   None:None <desc>
+                 > (0,0,1,0,2) object description
+              StaticGroupedFlowables(style='signatures')
+                   > (0,0,2,0,3) object signatures
+                Paragraph('genres = ['classical', 'jazz', '...', id='server.main.routes.Service.genres')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service.genres:1 <desc_signature>
+                     > (0,0,2,0,5) object signature
+                       (0,0,0,0,2) body
+                  MixedStyledText('genres = ['classical', 'jazz', '...')
+                    MixedStyledText('genres', style='main object name')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service.genres:None <desc_name>
+                         > (0,0,3,0,6) object name
+                      SingleStyledText('genres')
+                    MixedStyledText(' = ['classical', 'jazz', 'rock']', style='annotation')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service.genres:None <desc_annotation>
+                         > (0,0,3,0,6) object annotation
+                      SingleStyledText(' = ['classical', 'jazz', 'rock']')
+              StaticGroupedFlowables(style='content')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service.genres:None <desc_content>
+                   > (0,0,2,0,3) object description content
+            LabeledFlowable(style='object description')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service.get:None <desc>
+                 > (0,0,1,0,2) object description
+              StaticGroupedFlowables(style='signatures')
+                   > (0,0,2,0,3) object signatures
+                Paragraph('async get (  ) → quart.wrappers....', id='server.main.routes.Service.get')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service.get:1 <desc_signature>
+                     > (0,0,2,0,5) object signature
+                       (0,0,0,0,2) body
+                  MixedStyledText('async get (  ) → quart.wrappers....')
+                    MixedStyledText('async ', style='annotation')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service.get:None <desc_annotation>
+                         > (0,0,3,0,6) object annotation
+                      SingleStyledText('async ')
+                    MixedStyledText('get', style='main object name')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service.get:None <desc_name>
+                         > (0,0,3,0,6) object name
+                      SingleStyledText('get')
+                    MixedStyledText(' (  ) ')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service.get:None <desc_parameterlist>
+                      MixedStyledText(' ( ')
+                        SingleStyledText(' ( ', style='parentheses')
+                             > (0,0,3,0,6) object parentheses
+                        MixedStyledText('', style='parameter list')
+                             > (0,0,3,0,6) object parameter list
+                      SingleStyledText(' ) ', style='parentheses')
+                           > (0,0,3,0,6) object parentheses
+                    MixedStyledText('→ quart.wrappers.response.Respon...')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service.get:None <desc_returns>
+                      MixedStyledText('→ ')
+                        SingleStyledText('→', style='returns arrow')
+                        SingleStyledText(' ')
+                      MixedStyledText('quart.wrappers.response.Response', style='returns')
+                           > (0,0,3,0,6) object returns
+                        SingleStyledText('quart.wrappers.response.Response')
+              StaticGroupedFlowables(style='content')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service.get:None <desc_content>
+                   > (0,0,2,0,3) object description content
+                Paragraph('Main page')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service.get:1 <paragraph>
+                     > (0,0,2,0,5) object description content paragraph
+                       (0,0,0,0,2) body
+                  MixedStyledText('Main page')
+                    SingleStyledText('Main page')
+                Paragraph('Renders main page template')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service.get:3 <paragraph>
+                     > (0,0,2,0,5) object description content paragraph
+                       (0,0,0,0,2) body
+                  MixedStyledText('Renders main page template')
+                    SingleStyledText('Renders main page template')
+            LabeledFlowable(style='object description')   None:None <desc>
+                 > (0,0,1,0,2) object description
+              StaticGroupedFlowables(style='signatures')
+                   > (0,0,2,0,3) object signatures
+                Paragraph('methods: Optional[List[str]] = [...', id='server.main.routes.Service.methods')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service.methods:1 <desc_signature>
+                     > (0,0,2,0,5) object signature
+                       (0,0,0,0,2) body
+                  MixedStyledText('methods: Optional[List[str]] = [...')
+                    MixedStyledText('methods', style='main object name')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service.methods:None <desc_name>
+                         > (0,0,3,0,6) object name
+                      SingleStyledText('methods')
+                    MixedStyledText(': Optional[List[str]]', style='annotation')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service.methods:None <desc_annotation>
+                         > (0,0,3,0,6) object annotation
+                      SingleStyledText(': Optional[List[str]]')
+                    MixedStyledText(' = ['GET']', style='annotation')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service.methods:None <desc_annotation>
+                         > (0,0,3,0,6) object annotation
+                      SingleStyledText(' = ['GET']')
+              StaticGroupedFlowables(style='content')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/server/main/routes.py:docstring of server.main.routes.Service.methods:None <desc_content>
+                   > (0,0,2,0,3) object description content
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		25')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('		25')
+        Tab('	')
+        Tab('	')
+        Field('25')
+          SingleStyledText('25')
+---------------------------------- page 26 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+#### UpExpandingContainer('header')
+  StaticGroupedFlowables()
+    Header('MusicGenerationWebService, Relea...')
+         > (0,0,0,0,2) header
+           (0,0,0,0,1) body
+      MixedStyledText('MusicGenerationWebService, Relea...')
+        Field('MusicGenerationWebService')
+          SingleStyledText('MusicGenerationWebService')
+        SingleStyledText(', ')
+        Field('Release 0.0.1')
+          SingleStyledText('Release 0.0.1')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('26		Chapter 13.  server.main.rou...')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('26		Chapter 13.  server.main.rou...')
+        Field('26')
+          SingleStyledText('26')
+        Tab('	')
+        Tab('	')
+        StringField('Chapter')
+        SingleStyledText(' ')
+        Field('13')
+          SingleStyledText('13')
+        SingleStyledText('.  ')
+        Field('server.main.routes module')
+          SingleStyledText('server.main.routes module')
+---------------------------------- page 27 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### FlowablesContainer('chapter title')
+  Paragraph('CHAPTER 14', style='body matter chapter label')
+       > (0,0,1,0,2) body matter chapter label
+         (0,0,0,0,2) body
+    MixedStyledText('CHAPTER 14')
+      MixedStyledText('CHAPTER ')
+        StringField('CHAPTER')
+        SingleStyledText(' ')
+      Field('14', style='number')
+           > (0,0,2,0,3) body matter chapter number
+        SingleStyledText('14')
+  Paragraph('Module contents', style='body matter chapter title')
+       > (0,0,1,0,2) body matter chapter title
+         (0,0,0,0,2) body
+    Field('Module contents')
+      SingleStyledText('Module contents')
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    (continued) DocumentTree()
+      Section(id='id7')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/docs/PythonDoc/source/index.rst:132 <section>
+           > (0,0,0,1,2) chapter
+      List(style='bulleted')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/docs/PythonDoc/source/index.rst:143 <bullet_list>
+           > (0,0,1,0,2) bulleted list
+        ListItem()
+             x (0,0,1,0,4) bulleted list item
+             > fallback to default style
+          ListItemLabel('•')
+               > (0,0,1,0,6) bulleted list item label
+                 (0,0,0,0,2) list item label
+              MixedStyledText('•')
+                SingleStyledText('')
+                SingleStyledText('•')
+                SingleStyledText('')
+          StaticGroupedFlowables()   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/docs/PythonDoc/source/index.rst:None <list_item>
+               > (0,0,0,0,3) list item body
+            Paragraph('Index')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/docs/PythonDoc/source/index.rst:143 <paragraph>
+                 > (0,0,0,0,5) list item paragraph
+                   (0,0,0,0,2) body
+              MixedStyledText('Index')
+                AnnotatedText('Index', style='internal link')   None:None <reference>
+                     > (0,0,1,0,1) internal hyperlink
+                  MixedStyledText('Index')
+                    MixedStyledText('Index')   None:None <inline>
+                      SingleStyledText('Index')
+        ListItem()
+             x (0,0,1,0,4) bulleted list item
+             > fallback to default style
+          ListItemLabel('•')
+               > (0,0,1,0,6) bulleted list item label
+                 (0,0,0,0,2) list item label
+              MixedStyledText('•')
+                SingleStyledText('')
+                SingleStyledText('•')
+                SingleStyledText('')
+          StaticGroupedFlowables()   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/docs/PythonDoc/source/index.rst:None <list_item>
+               > (0,0,0,0,3) list item body
+            Paragraph('Module Index')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/docs/PythonDoc/source/index.rst:144 <paragraph>
+                 > (0,0,0,0,5) list item paragraph
+                   (0,0,0,0,2) body
+              MixedStyledText('Module Index')
+                AnnotatedText('Module Index', style='internal link')   None:None <reference>
+                     > (0,0,1,0,1) internal hyperlink
+                  MixedStyledText('Module Index')
+                    MixedStyledText('Module Index')   None:None <inline>
+                      SingleStyledText('Module Index')
+        ListItem()
+             x (0,0,1,0,4) bulleted list item
+             > fallback to default style
+          ListItemLabel('•')
+               > (0,0,1,0,6) bulleted list item label
+                 (0,0,0,0,2) list item label
+              MixedStyledText('•')
+                SingleStyledText('')
+                SingleStyledText('•')
+                SingleStyledText('')
+          StaticGroupedFlowables()   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/docs/PythonDoc/source/index.rst:None <list_item>
+               > (0,0,0,0,3) list item body
+            Paragraph('Search Page')   /home/krok/Documents/Projects/IPZ/MusicGenerationWebService/docs/PythonDoc/source/index.rst:145 <paragraph>
+                 > (0,0,0,0,5) list item paragraph
+                   (0,0,0,0,2) body
+              MixedStyledText('Search Page')
+                AnnotatedText('Search Page', style='internal link')   None:None <reference>
+                     > (0,0,1,0,1) internal hyperlink
+                  MixedStyledText('Search Page')
+                    MixedStyledText('Search Page')   None:None <inline>
+                      SingleStyledText('Search Page')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		27')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('		27')
+        Tab('	')
+        Tab('	')
+        Field('27')
+          SingleStyledText('27')
+---------------------------------- page 29 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### FlowablesContainer('chapter title')
+  Paragraph('Python Module Index', style='front matter section title')
+       > (0,0,1,0,2) front matter section title
+         (0,0,0,0,2) body
+    Field('Python Module Index')
+      SingleStyledText('Python Module Index')
+#### ChainedContainer('column1')
+  StaticGroupedFlowables()
+    StaticGroupedFlowables()
+      IndexSection()
+           > (0,0,0,1,1) chapter
+        IndexLabel('s')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+          SingleStyledText('s')
+        IndexEntry('server, 3')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('server, 3')
+            SingleStyledText('server', style='domain')
+                 > (0,0,1,0,3) domain index entry name
+            SingleStyledText(', ')
+            Reference('3')
+                 > (0,0,0,1,1) linked reference
+              SingleStyledText('3')
+        IndexEntry('server.algorythm.music_generatio...')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('server.algorythm.music_generatio...')
+            SingleStyledText('server.algorythm.music_generatio...', style='domain')
+                 > (0,0,1,0,3) domain index entry name
+            SingleStyledText(', ')
+            Reference('11')
+                 > (0,0,0,1,1) linked reference
+              SingleStyledText('11')
+        IndexEntry('server.errors, 21')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('server.errors, 21')
+            SingleStyledText('server.errors', style='domain')
+                 > (0,0,1,0,3) domain index entry name
+            SingleStyledText(', ')
+            Reference('21')
+                 > (0,0,0,1,1) linked reference
+              SingleStyledText('21')
+        IndexEntry('server.errors.handlers, 19')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('server.errors.handlers, 19')
+            SingleStyledText('server.errors.handlers', style='domain')
+                 > (0,0,1,0,3) domain index entry name
+            SingleStyledText(', ')
+            Reference('19')
+                 > (0,0,0,1,1) linked reference
+              SingleStyledText('19')
+        IndexEntry('server.main, 27')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('server.main, 27')
+            SingleStyledText('server.main', style='domain')
+                 > (0,0,1,0,3) domain index entry name
+            SingleStyledText(', ')
+            Reference('27')
+                 > (0,0,0,1,1) linked reference
+              SingleStyledText('27')
+        IndexEntry('server.main.routes, 25')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('server.main.routes, 25')
+            SingleStyledText('server.main.routes', style='domain')
+                 > (0,0,1,0,3) domain index entry name
+            SingleStyledText(', ')
+            Reference('25')
+                 > (0,0,0,1,1) linked reference
+              SingleStyledText('25')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		29')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('		29')
+        Tab('	')
+        Tab('	')
+        Field('29')
+          SingleStyledText('29')
+---------------------------------- page 30 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+#### UpExpandingContainer('header')
+  StaticGroupedFlowables()
+    Header('MusicGenerationWebService, Relea...')
+         > (0,0,0,0,2) header
+           (0,0,0,0,1) body
+      MixedStyledText('MusicGenerationWebService, Relea...')
+        Field('MusicGenerationWebService')
+          SingleStyledText('MusicGenerationWebService')
+        SingleStyledText(', ')
+        Field('Release 0.0.1')
+          SingleStyledText('Release 0.0.1')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('30		Python Module Index')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('30		Python Module Index')
+        Field('30')
+          SingleStyledText('30')
+        Tab('	')
+        Tab('	')
+        Field('Python Module Index')
+          SingleStyledText('Python Module Index')
+---------------------------------- page 31 ----------------------------------
+#### FootnoteContainer('footnotes')
+  StaticGroupedFlowables()
+#### DownExpandingContainer('floats')
+  StaticGroupedFlowables()
+#### FlowablesContainer('chapter title')
+  Paragraph('Index', style='front matter section title')
+       > (0,0,1,0,2) front matter section title
+         (0,0,0,0,2) body
+    Field('Index')
+      SingleStyledText('Index')
+#### ChainedContainer('column1')
+  (continued) StaticGroupedFlowables()
+    IndexSection()
+         > (0,0,0,1,1) chapter
+      Index()   index
+           > (0,0,0,0,2) index
+        IndexLabel('B')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+          SingleStyledText('B')
+        IndexEntry('bad_request() (in module server....')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('bad_request() (in module server....')
+            SingleStyledText('bad_request() (in module server....')
+            MixedStyledText('19')
+              Reference('19')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('19')
+        IndexLabel('C')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+          SingleStyledText('C')
+        IndexEntry('create_app() (in module server),...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('create_app() (in module server),...')
+            SingleStyledText('create_app() (in module server),...')
+            MixedStyledText('3')
+              Reference('3')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('3')
+        IndexLabel('E')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+          SingleStyledText('E')
+        IndexEntry('error_response() (in module serv...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('error_response() (in module serv...')
+            SingleStyledText('error_response() (in module serv...')
+            MixedStyledText('19')
+              Reference('19')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('19')
+        IndexLabel('G')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+          SingleStyledText('G')
+        IndexEntry('generate() (in module server.alg...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('generate() (in module server.alg...')
+            SingleStyledText('generate() (in module server.alg...')
+            MixedStyledText('11')
+              Reference('11')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('11')
+        IndexEntry('genres (server.main.routes.Servi...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('genres (server.main.routes.Servi...')
+            SingleStyledText('genres (server.main.routes.Servi...')
+            MixedStyledText('25')
+              Reference('25')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('25')
+        IndexEntry('get() (server.main.routes.Health...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('get() (server.main.routes.Health...')
+            SingleStyledText('get() (server.main.routes.Health...')
+            MixedStyledText('25')
+              Reference('25')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('25')
+        IndexEntry('get() (server.main.routes.Servic...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('get() (server.main.routes.Servic...')
+            SingleStyledText('get() (server.main.routes.Servic...')
+            MixedStyledText('25')
+              Reference('25')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('25')
+        IndexLabel('H')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+          SingleStyledText('H')
+        IndexEntry('HealthCheck (class in server.mai...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('HealthCheck (class in server.mai...')
+            SingleStyledText('HealthCheck (class in server.mai...')
+            MixedStyledText('25')
+              Reference('25')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('25')
+        IndexLabel('I')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+          SingleStyledText('I')
+        IndexEntry('internal_error() (in module serv...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('internal_error() (in module serv...')
+            SingleStyledText('internal_error() (in module serv...')
+            MixedStyledText('19')
+              Reference('19')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('19')
+        IndexLabel('M')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+          SingleStyledText('M')
+        IndexEntry('methods (server.main.routes.Heal...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('methods (server.main.routes.Heal...')
+            SingleStyledText('methods (server.main.routes.Heal...')
+            MixedStyledText('25')
+              Reference('25')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('25')
+        IndexEntry('methods (server.main.routes.Serv...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('methods (server.main.routes.Serv...')
+            SingleStyledText('methods (server.main.routes.Serv...')
+            MixedStyledText('25')
+              Reference('25')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('25')
+        IndexEntry('module')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          SingleStyledText('module')
+        IndexEntry('server, 3')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('server, 3')
+            SingleStyledText('server, ')
+            MixedStyledText('3')
+              Reference('3')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('3')
+        IndexEntry('server.algorythm.music_generatio...')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('server.algorythm.music_generatio...')
+            SingleStyledText('server.algorythm.music_generatio...')
+            MixedStyledText('11')
+              Reference('11')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('11')
+        IndexEntry('server.errors, 21')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('server.errors, 21')
+            SingleStyledText('server.errors, ')
+            MixedStyledText('21')
+              Reference('21')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('21')
+        IndexEntry('server.errors.handlers, 19')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('server.errors.handlers, 19')
+            SingleStyledText('server.errors.handlers, ')
+            MixedStyledText('19')
+              Reference('19')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('19')
+#### ChainedContainer('column2')
+  (continued) StaticGroupedFlowables()
+    (continued) IndexSection()
+         > (0,0,0,1,1) chapter
+      (continued) Index()   index
+           > (0,0,0,0,2) index
+        IndexEntry('server.main, 27')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+        IndexEntry('server.main.routes, 25')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('server.main.routes, 25')
+            SingleStyledText('server.main.routes, ')
+            MixedStyledText('25')
+              Reference('25')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('25')
+        IndexLabel('N')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+          SingleStyledText('N')
+        IndexEntry('not_found_error() (in module ser...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('not_found_error() (in module ser...')
+            SingleStyledText('not_found_error() (in module ser...')
+            MixedStyledText('19')
+              Reference('19')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('19')
+        IndexLabel('P')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+          SingleStyledText('P')
+        IndexEntry('post() (server.main.routes.Healt...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('post() (server.main.routes.Healt...')
+            SingleStyledText('post() (server.main.routes.Healt...')
+            MixedStyledText('25')
+              Reference('25')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('25')
+        IndexLabel('S')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+          SingleStyledText('S')
+        IndexEntry('server')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          SingleStyledText('server')
+        IndexEntry('module, 3')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('module, 3')
+            SingleStyledText('module, ')
+            MixedStyledText('3')
+              Reference('3')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('3')
+        IndexEntry('server.algorythm.music_generatio...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          SingleStyledText('server.algorythm.music_generatio...')
+        IndexEntry('module, 11')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('module, 11')
+            SingleStyledText('module, ')
+            MixedStyledText('11')
+              Reference('11')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('11')
+        IndexEntry('server.errors')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          SingleStyledText('server.errors')
+        IndexEntry('module, 21')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('module, 21')
+            SingleStyledText('module, ')
+            MixedStyledText('21')
+              Reference('21')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('21')
+        IndexEntry('server.errors.handlers')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          SingleStyledText('server.errors.handlers')
+        IndexEntry('module, 19')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('module, 19')
+            SingleStyledText('module, ')
+            MixedStyledText('19')
+              Reference('19')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('19')
+        IndexEntry('server.main')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          SingleStyledText('server.main')
+        IndexEntry('module, 27')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('module, 27')
+            SingleStyledText('module, ')
+            MixedStyledText('27')
+              Reference('27')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('27')
+        IndexEntry('server.main.routes')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          SingleStyledText('server.main.routes')
+        IndexEntry('module, 25')
+             > (0,0,0,1,2) level 2 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('module, 25')
+            SingleStyledText('module, ')
+            MixedStyledText('25')
+              Reference('25')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('25')
+        IndexEntry('Service (class in server.main.ro...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('Service (class in server.main.ro...')
+            SingleStyledText('Service (class in server.main.ro...')
+            MixedStyledText('25')
+              Reference('25')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('25')
+        IndexLabel('W')
+             > (0,0,0,0,2) index section label
+               (0,0,0,0,1) body
+          SingleStyledText('W')
+        IndexEntry('wants_json_response() (in module...')
+             > (0,0,0,1,2) level 1 index entry
+               (0,0,0,0,1) body
+          MixedStyledText('wants_json_response() (in module...')
+            SingleStyledText('wants_json_response() (in module...')
+            MixedStyledText('19')
+              Reference('19')
+                   > (0,0,0,1,1) linked reference
+                SingleStyledText('19')
+#### DownExpandingContainer('footer')
+  StaticGroupedFlowables()
+    Footer('		31')
+         > (0,0,0,0,2) footer
+           (0,0,0,0,1) body
+      MixedStyledText('		31')
+        Tab('	')
+        Tab('	')
+        Field('31')
+          SingleStyledText('31')

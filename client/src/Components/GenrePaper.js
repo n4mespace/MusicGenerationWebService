@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
@@ -8,8 +8,6 @@ import Button from '@material-ui/core/Button';
 const styles = theme => ({
   paper: {
     padding: theme.spacing.unit * 2,
-    color: orange[500],
-    backgroundColor: theme.palette.action.disabled,
     marginBottom: theme.spacing.unit,
   },
   button: {
@@ -18,41 +16,42 @@ const styles = theme => ({
   },
 });
 
-
+/**
+ * Represents Button with genre of music for choise
+ * Using for music play handling
+ * @component
+ * @param {object} props - props of component
+ */
 const GenrePaper = (props) => {
   const { classes } = props;
   const genre = props.genre;
-  const prevActiveButton = props.activeButton;
+  const activeButton = props.activeButton;
+  const changeActiveButton = props.onClick;
 
-  // TODO: refactor with UseState
-  const handleChange = event => {
-    if (prevActiveButton !== genre) {
-      const newActiveBtn = document.getElementById(genre);
-      
-      newActiveBtn.style.background = "white";
-      newActiveBtn.style.color = "black";      
+  const [backgroundColor, setBackgroundColor] = useState("rgba(0, 0, 0, 0.26)");
+  const [color, setColor] = useState(orange[500]);
 
-      if (prevActiveButton) {
-        const prevActiveBtn = document.getElementById(prevActiveButton);
-
-        prevActiveBtn.style.background = "rgba(0, 0, 0, 0.26)";
-        prevActiveBtn.style.color = orange[500];
-      }
-
-      props.onClick(genre);
-      event.preventDefault();
+  useEffect(() => {
+    if (activeButton === genre) {      
+      setBackgroundColor("white");
+      setColor("black");
+    } else {
+      setBackgroundColor("rgba(0, 0, 0, 0.26)");
+      setColor(orange[500]);
     }
-  };
+
+  }, [activeButton, genre]);
 
   return (
     <Button
       className={classes.button}
-      onClick={handleChange}
+      onClick={changeActiveButton}
       key={genre}
       id={'btn-'.concat(genre)}
     >
       <Paper
         className={classes.paper}
+        style={{backgroundColor: backgroundColor, color: color}}
         key={genre}
         id={genre}
       >
@@ -64,6 +63,9 @@ const GenrePaper = (props) => {
 
 GenrePaper.propTypes = {
   classes: PropTypes.object.isRequired,
+  genre: PropTypes.any,
+  onClick: PropTypes.func,
+  activeButton: PropTypes.any,
 };
 
 export default withStyles(styles)(GenrePaper);

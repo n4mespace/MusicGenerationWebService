@@ -1,4 +1,4 @@
-from quart import jsonify, request, render_template
+from quart import jsonify, request, render_template, Response
 from quart_openapi import Resource
 from config import MUSIC_GENRES
 from server.main import bp
@@ -11,14 +11,14 @@ class HealthCheck(Resource):
     Extends:
         Resource
     '''
-    async def get(self):
+    async def get(self) -> Response:
         '''GET checker
 
         Must return json with success status
         '''
         return jsonify({'status': 'OK'})
 
-    async def post(self):
+    async def post(self) -> Response:
         '''POST checker
 
         Must get data and return json with success status
@@ -41,7 +41,7 @@ class Service(Resource):
     # Available options for generation
     genres = MUSIC_GENRES
 
-    async def get(self):
+    async def get(self) -> Response:
         '''Main page
 
         Renders main page template

@@ -31,6 +31,12 @@ const styles = theme => ({
   },
 });
 
+/**
+ * Represents Topbar of Main Page
+ * Adds link to documentaion and project source
+ * @component
+ * @param {object} props - props of component
+ */
 const TopBar = (props) => {
   const { classes } = props;
   const externalLinks = {

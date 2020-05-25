@@ -20,7 +20,7 @@
 ##  1. Вступ <a name="introduction"></a>
 ### 1.1 Ціль проєкту
 
-MGWS - веб сервіс, на якому користувач може прослуховувати музику згенеровану глубокою нейронною мережею типу "трансформер". Детальніше в цьому [ноутбуці](). Данні використані для "тюнингу" моделі можна скачати за [лінкою](https://drive.google.com/open?id=1Hbn8jQKIyJtHIbhGbQ0DrbAMha6OFWdM).
+MGWS - веб сервіс, на якому користувач може прослуховувати музику згенеровану глубокою нейронною мережею типу "трансформер". Детальніше в цьому [ноутбуці](https://colab.research.google.com/drive/1C1bIClVhXkXy3mRwl3ozXImdYvRgGcwz?usp=sharing). Данні використані для "тюнингу" моделі можна скачати за [лінкою](https://drive.google.com/open?id=1Hbn8jQKIyJtHIbhGbQ0DrbAMha6OFWdM).
 
 ### 1.2 Реалізація
 
@@ -47,12 +47,27 @@ MGWS - веб сервіс, на якому користувач може про
  - кілька жанрів музики на вибір.
  - можливість отримання згенерованої музики сторонніми сервісами через REST API.
 
+### 2.3 Документація
+
+ - JsDoc
+```bash
+>> cd client
+>> npm run docs
+```
+ - PythonDoc
+```bash
+>> cd docs/PythonDoc
+>> make html
+>> sphinx-build -b rinoh source _build/rinoh
+```
+
 ## 3. Проектування  <a name="design"></a>
 
 ### Проєктування графічного інтерфейсу користувача
 
-// Скріншоти
+Веб-сервіс побудований як SPA, зразок головної сторінки
 
+![SPA Example page](docs/img/page_image.png)
 
 ## 4. Розробка  <a name="development"></a>
  ### TODO:

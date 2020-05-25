@@ -12,11 +12,19 @@ import { CSSTransition, transit } from 'react-css-transition';
 
 // const GenresGrid = React.lazy(() => import('./Component/GenresGrid/index.js'));
 
+
+/**
+ * Represents Main App
+ * Link all components in one
+ * @component
+ * @param {object} props - props of component
+ */
 const App = (props) => {
   const [skyLoaded, setSkyLoaded] = useState(false);
   
   const [noteImages, setNoteImages] = useState({});
   const musicUrl = useState('api/generate')[0];
+  const playerID = useState('genMusic')[0];
 
   const importAllImages = context => context.keys().map(context);
 
@@ -80,9 +88,12 @@ const App = (props) => {
                 time={40} 
                 size={'80px'}
                 id="sky"
-              />
+              />                                                                                                                                                                                                                                                        
             </CSSTransition>  
-            <ABCPlayer musicUrl={musicUrl} />
+            <ABCPlayer 
+              musicUrl={musicUrl} 
+              playerID={playerID}
+            />
           </div>
           )
         }

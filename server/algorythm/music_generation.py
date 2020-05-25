@@ -1,7 +1,22 @@
 import gpt_2_simple as gpt2
+from tensorflow import Session
 
 
-def generate(genre, checkpoint_dir, sess, params):
+def generate(genre: str,
+             checkpoint_dir: str,
+             sess: Session,
+             params: dict) -> str:
+    '''Generate music given model session and params
+
+    Arguments:
+      genre {str} -- genre name
+      checkpoint_dir {str} -- chechpoint path
+      sess {tf.Session} -- model session
+      params {dict} -- additional params
+
+    Returns:
+      str -- generated music
+    '''
     t = float(params.get('temperature', 1.0))
     k = int(params.get('top_k', 5))
     include_prefix = bool(params.get('include_prefix', False))

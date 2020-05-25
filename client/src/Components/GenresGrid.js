@@ -16,9 +16,16 @@ const styles = theme => ({
   },
 });
 
+/**
+ * Represents Grid of buttons with music genres
+ * Handles button behaviour
+ * @component
+ * @param {object} props - props of component
+ */
 const GenresGrid = props => {
   const { classes } = props;
   const [activeButton, setActiveButton] = useState('');
+  const handleClick = (genre) => () => setActiveButton(genre);
 
   return (
     <div className={classes.root}>
@@ -34,11 +41,12 @@ const GenresGrid = props => {
         >
           {window.music_genres.map((genre) => {
             return (
-              <Grid item xs={8} sm={5} md={4} lg={3} xl={2}>
+              <Grid item key={genre}
+                xs={8} sm={5} md={4} lg={3} xl={2}>
                 <GenrePaper 
                   genre={genre}
                   activeButton={activeButton}
-                  onClick={setActiveButton}
+                  onClick={handleClick(genre)}
                 />
               </Grid>
             );

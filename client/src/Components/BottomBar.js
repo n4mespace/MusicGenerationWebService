@@ -13,6 +13,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+/**
+ * Represents Footer element
+ * Adds link and time to Main Page
+ * @component
+ */
 export default function BottomBar() {
   const classes = useStyles();
 

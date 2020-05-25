@@ -19,8 +19,12 @@ gpt-2-simple = "^0.7.1"
 tensorflow = "1.15.2"
 quart-jwt-extended = "^0.0.2"
 quart-cors = "^0.3.0"
+typing = "^3.7.4"
 
 [tool.poetry.dev-dependencies]
+Sphinx = "^3.0.3"
+rinohtype = "^0.4.0"
+sphinxcontrib-napoleon = "^0.7"
 
 [tool.poetry.scripts]
 [build-system]

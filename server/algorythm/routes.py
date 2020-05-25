@@ -1,4 +1,4 @@
-from quart import jsonify, request
+from quart import jsonify, request, Response
 from quart_openapi import Resource
 from server.algorythm import bp
 from server.algorythm.music_generation import generate
@@ -9,7 +9,7 @@ import gc
 
 
 # Start new session for generation model
-sess = gpt2.start_tf_sess(threads=1)
+sess = gpt2.start_tf_sess(threads=2)
 
 # All pretrained models path
 checkpoint_dir = 'server/algorythm/checkpoint/'
@@ -36,7 +36,7 @@ class MusicGeneration(Resource):
     # Available options for generation
     genres = MUSIC_GENRES
 
-    async def get(self):
+    async def get(self) -> Response:
         global sess, generate_count
 
         params = request.args
@@ -54,14 +54,17 @@ class MusicGeneration(Resource):
 
             tf.reset_default_graph()
             sess.close()
-            sess = gpt2.start_tf_sess(threads=1)
-            gpt2.load_gpt2(sess)
+            sess = gpt2.start_tf_sess(threads=2)
+            gpt2.load_gpt2(sess,
+                           checkpoint_dir=checkpoint_dir,
+                           run_name='nmd1')
 
+        # Call garbage collector
         gc.collect()
 
         return jsonify({'music': music_abc})
 
-    async def post(self):
+    async def post(self) -> Response:
         global sess, generate_count
 
         params = await request.get_json()
@@ -79,9 +82,12 @@ class MusicGeneration(Resource):
 
             tf.reset_default_graph()
             sess.close()
-            sess = gpt2.start_tf_sess(threads=1)
-            gpt2.load_gpt2(sess)
+            sess = gpt2.start_tf_sess(threads=2)
+            gpt2.load_gpt2(sess,
+                           checkpoint_dir=checkpoint_dir,
+                           run_name='nmd1')
 
+        # Call garbage collector
         gc.collect()
 
         return jsonify({'music': music_abc})
